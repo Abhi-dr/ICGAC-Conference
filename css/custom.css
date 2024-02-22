@@ -1388,13 +1388,13 @@ nav {
 
 .mask {
 
-    min-height: 650px;
+    /* min-height: 650px; */
 
     width: 100%;
 
     height: 100%;
 
-    padding-top: 70px;
+    /* padding-top: 70px; */
 
 }
 
