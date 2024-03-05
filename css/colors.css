@@ -288,6 +288,12 @@ footer,
     background-image: url('../images/narayn_das_agagwal.png');
 }
 
+.speakers_image2 {
+    background-image: url('../images/Prof.DurgSinghChauhan.jpg');
+}
+
+
+
 .first_image:empty,
 .first_image {
     background-image: url('../images/first.jpg');
