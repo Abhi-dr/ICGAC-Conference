@@ -4,39 +4,81 @@
 <!-- Mirrored from eventime.tchaikovsky.design/eventime_demo/one_page_with_animation.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Feb 2024 17:20:06 GMT -->
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>
-    ICGAC </title>
-  <link rel='shortcut icon' type='image/x-icon' href='http://eventime.tchaikovsky.design/favicon.ico' />
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Font Raleway -->
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,700,300' rel='stylesheet' type='text/css'>
-  <!-- Font Awsome Icons CSS -->
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link href="css/custom.css" rel="stylesheet">
-  <!-- Colors and Backgrounds CSS -->
-  <link href="css/colors.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>
+        ICGAC </title>
+    <link rel='shortcut icon' type='image/x-icon' href='http://eventime.tchaikovsky.design/favicon.ico' />
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font Raleway -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,700,300' rel='stylesheet' type='text/css'>
+    <!-- Font Awsome Icons CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- Colors and Backgrounds CSS -->
+    <link href="css/colors.css" rel="stylesheet">
+    <style>
+        .dropbtn {
+            background-color: rgba(90, 255, 90, 0.74);
+            color: white;
+            padding: 20%;
+            font-size: 16px;
+            border: none;
+        }
+        /* The container <div> - needed to position the dropdown content */
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        /* Dropdown Content (Hidden by Default) */
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        
+        .dropdown-content a {
+            color: black;
+        }
+        /* Change color of dropdown links on hover */
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        /* Show the dropdown menu on hover */
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
 </head>
 
 <body>
-  <!-- <div id="preloader">
+    <!-- <div id="preloader">
     <div class="pre_container">
       <div class="loader">
       </div>
     </div>
   </div> -->
-  <!-- Fixed navbar -->
-  <nav class="navbar navbar-fixed-top nav_mask">
-    <div class="navi_container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-          aria-expanded="false" aria-controls="navbar">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-fixed-top nav_mask">
+        <div class="navi_container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">
             Toggle navigation </span>
           <span class="icon-bar">
@@ -46,28 +88,28 @@
           <span class="icon-bar">
           </span>
         </button>
-        <a class="navbar-brand" href="#home_slider">
+                <a class="navbar-brand" href="#home_slider">
           ICGAC </a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="#about_menu">
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#about_menu">
               About </a>
-          </li>
-          <li>
-            <a href="#schedule_menu">
+                    </li>
+                    <li>
+                        <a href="#schedule_menu">
               Schedule </a>
-          </li>
-          <li>
-            <a href="#reservation_menu">
+                    </li>
+                    <li>
+                        <a href="#reservation_menu">
               REGISTRATION </a>
-          </li>
-          <li>
-            <a href="#ourSpeakers">
+                    </li>
+                    <li>
+                        <a href="#ourSpeakers">
               Speakers </a>
-          </li>
-          <!-- <li>
+                    </li>
+                    <!-- <li>
             <a href="#reservation_menu">
               Reservation </a>
           </li>
@@ -75,1017 +117,1006 @@
             <a href="#past_menu">
               Past </a>
           </li>x -->
-          <li>
-            <a href="#contact_menu">
+                    <li>
+                        <a href="#contact_menu">
               Contact </a>
-          </li>
+                    </li>
 
-          <li>
-            <a class="btn eventime_button" style="width: 100%; border: 1.5px solid green;" href="data\ICGAC Flyer 2k24.pdf" download role="button">
-              Download Broschure </a>
-          </li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-    <!--/.nav-collapse -->
-  </nav>
-  <header id="home_slider" class="carousel slide">
-    <!-- Wrapper for Slides -->
-    <div class="carousel-inner">
-      <div class="item active ">
-        <!-- Set the first background image using inline CSS below. -->
-        <div class="fill" style="background-image:url('https://www.gla.ac.in/images/institute-overview.jpg');">
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Submission</button>
+                            <div class="dropdown-content">
+                                <a class="btn eventime_button" style="width: 100%; border: 1.5px solid green; font-size: 99%;" href="data\ICGAC Flyer 2k24.pdf" download role="button">
+                  Broschure </a>
+                                <a class="btn eventime_button" style="width: 100%; border: 1.5px solid green; font-size: 99%;" href="data\ICGAC Abstract Format.pdf" download role="button">
+                    Abstract Format </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-        <div class="fill_mask">
-          <div class="description ">
-            <h3 class="details wow fadeInDown" style="font-weight: bold;">
-              International Conference on Gravitation, Cosmology and Astrophysics </h3>
-            <div class="details wow fadeInUp">
-              <div class="fa fa-map-marker fa-2x">
-              </div>
-              <p>
-                TBI Block, AB-11, GLA University, Mathura, India
-              </p>
-            </div>
-            <div class="details wow fadeInUp">
-              <div class="fa fa-clock-o fa-2x">
-              </div>
-              <p>
-                14-16 June 2024 <span style="color: #82f153;">(In Hybrid Mode)</span> 
-              </p>
-            </div>
-            <div class="buttons ">
-              <a class="wow fadeInLeft btn eventime_button" href="#about_menu" role="button">
+        <!--/.nav-collapse -->
+    </nav>
+    <header id="home_slider" class="carousel slide">
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active ">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('https://www.gla.ac.in/images/institute-overview.jpg');">
+                </div>
+                <div class="fill_mask">
+                    <div class="description ">
+                        <h3 class="details wow fadeInDown" style="font-weight: bold;">
+                            International Conference on Gravitation, Cosmology and Astrophysics </h3>
+                        <div class="details wow fadeInUp">
+                            <div class="fa fa-map-marker fa-2x">
+                            </div>
+                            <p>
+                                TBI Block, AB-11, GLA University, Mathura, India
+                            </p>
+                        </div>
+                        <div class="details wow fadeInUp">
+                            <div class="fa fa-clock-o fa-2x">
+                            </div>
+                            <p>
+                                14-16 June 2024 <span style="color: #82f153;">(In Hybrid Mode)</span>
+                            </p>
+                        </div>
+                        <div class="buttons ">
+                            <a class="wow fadeInLeft btn eventime_button" href="#about_menu" role="button">
                 About Event </a>
-              <a class="wow fadeInRight btn eventime_button" href="#reservation_menu" role="button">
+                            <a class="wow fadeInRight btn eventime_button" href="#reservation_menu" role="button">
                 REGISTRATION </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <!-- Set the first background image using inline CSS below. -->
-        <div class="fill" style="background-image:url('https://www.gla.ac.in/images/about-us.jpg');">
-        </div>
-        <div class="fill_mask">
-          <div class="description ">
-            <h2 class="wow fadeInUp">
-              International Conference on Gravitation, Cosmology and Astrophysics</h2>
-            <div class="buttons">
-              <a class="wow fadeInUp btn eventime_button" href="#speakers_menu" role="button">
+            <div class="item">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('https://www.gla.ac.in/images/about-us.jpg');">
+                </div>
+                <div class="fill_mask">
+                    <div class="description ">
+                        <h2 class="wow fadeInUp">
+                            International Conference on Gravitation, Cosmology and Astrophysics</h2>
+                        <div class="buttons">
+                            <a class="wow fadeInUp btn eventime_button" href="#speakers_menu" role="button">
                 Speakers </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <!-- Set the first background image using inline CSS below. -->
-        <div class="fill" style="background-image:url('https://www.gla.ac.in/images/hostel-banner.jpg');">
-        </div>
-        <div class="fill_mask">
-          <div class="description ">
-            <h2 class="wow fadeInUp" style="font-weight: bold;">
-              International Conference on Gravitation, Cosmology and Astrophysics </h2>
-            <div class="details wow fadeInDown">
-              <div class="fa fa-clock-o fa-2x">
-              </div>
-              <p>
-                14-16 June 2024 <span style="color: #82f153;">(In Hybrid Mode)</span> 
-              </p>
-            </div>
-            <div class="buttons">
-              <a class="wow fadeInUp btn eventime_button" href="#schedule_menu" role="button">
+            <div class="item">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('https://www.gla.ac.in/images/hostel-banner.jpg');">
+                </div>
+                <div class="fill_mask">
+                    <div class="description ">
+                        <h2 class="wow fadeInUp" style="font-weight: bold;">
+                            International Conference on Gravitation, Cosmology and Astrophysics </h2>
+                        <div class="details wow fadeInDown">
+                            <div class="fa fa-clock-o fa-2x">
+                            </div>
+                            <p>
+                                14-16 June 2024 <span style="color: #82f153;">(In Hybrid Mode)</span>
+                            </p>
+                        </div>
+                        <div class="buttons">
+                            <a class="wow fadeInUp btn eventime_button" href="#schedule_menu" role="button">
                 Schedule</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <a class="wow fadeInLeft left_arrow" href="#home_slider" data-slide="prev">
-      <svg width="26px" height="48">
+        <a class="wow fadeInLeft left_arrow" href="#home_slider" data-slide="prev">
+            <svg width="26px" height="48">
         <polygon points="3.3,24.5 25.5,2.3 24,0.8 0.3,24.5 24,48.2 25.5,46.7" />
       </svg>
-    </a>
-    <a class="wow fadeInRight right_arrow" href="#home_slider" data-slide="next">
-      <svg width="26px" height="48">
+        </a>
+        <a class="wow fadeInRight right_arrow" href="#home_slider" data-slide="next">
+            <svg width="26px" height="48">
         <polygon points="22.5,24.5 0.3,2.3 1.8,0.8 25.5,24.5 1.8,48.2 0.3,46.7" />
       </svg>
-    </a>
-  </header>
-  <div class="clear">
-  </div>
-  <div id="about_menu">
-    <!-- Page Content -->
-    <div class="firstrow">
-      <div class="centred">
-        <div class="first_line wow fadeInDown">
-        </div>
-        <div class="first_title wow fadeInDown">
-          <p>
-            About GLA University
-          </p>
-        </div>
-        <div class="first_description wow fadeInDown">
-          <p style="text-align: justify;">
-            GLA University is a NAAC A+ accredited
-            University. It started in 1998 as the GLA
-            Institute of Technology and Management. It
-            went on to take the shape of the GLA Group of
-            Institutions and finally became GLA University
-            in the year 2010. The university is spread over
-            114 acres of lush green campus. The University
-            has more than 21000 students in its various
-            courses at the diploma, undergraduate,
-            postgraduate, and doctor levels in the
-            disciplines of Science, Technology,
-            Management, and Pharmacy. More than 650
-            experienced faculty members and over 2000
-            staff members are devoted to the growth of the
-            University.
-          </p>
-        </div>
-      </div>
-      <div class="wow fadeIn first_image">
-      </div>
-    </div>
-
+        </a>
+    </header>
     <div class="clear">
     </div>
-    <!-- ===================================== ABOUT CONFERENCE ======================================= -->
-
-    <div class="firstrow">
-      <div class="centred">
-        <div class="first_line wow fadeInDown">
+    <div id="about_menu">
+        <!-- Page Content -->
+        <div class="firstrow">
+            <div class="centred">
+                <div class="first_line wow fadeInDown">
+                </div>
+                <div class="first_title wow fadeInDown">
+                    <p>
+                        About GLA University
+                    </p>
+                </div>
+                <div class="first_description wow fadeInDown">
+                    <p style="text-align: justify;">
+                        GLA University is a NAAC A+ accredited University. It started in 1998 as the GLA Institute of Technology and Management. It went on to take the shape of the GLA Group of Institutions and finally became GLA University in the year 2010. The university is
+                        spread over 114 acres of lush green campus. The University has more than 21000 students in its various courses at the diploma, undergraduate, postgraduate, and doctor levels in the disciplines of Science, Technology, Management,
+                        and Pharmacy. More than 650 experienced faculty members and over 2000 staff members are devoted to the growth of the University.
+                    </p>
+                </div>
+            </div>
+            <div class="wow fadeIn first_image">
+            </div>
         </div>
-        <div class="first_title wow fadeInDown">
-          <p>
-            About ICGAC Conference 2k24
-          </p>
-        </div>
-        <div class="first_description wow fadeInDown">
-          <p style="text-align: justify;">
-            International Conference on Gravitation,
-            Astrophysics, and Cosmology aims to bring
-            together leading academicians, scientists,
-            researchers, and scholars to share and exchange
-            their experiences, research findings, and results. It
-            provides a premier platform for researchers to
-            share, discuss, and present their research results on
-            the most recent innovations, trends, and concerns,
-            and practical challenges in all aspects of
-            Gravitation, Astrophysics, and Cosmology. The
-            scope of the conference extends to the following:
-          <ul>
-            <li> General Relativity
-            </li>
-            <li> Cosmology
-            </li>
-            <li> Astrophysics & Astronomy
-            </li>
-            <li> Theoretical Physics
-            </li>
-            <li>Black Holes</li>
-            <li>Modified Gravity</li>
-            <li>Differential Geometry</li>
-            <li>Relativistic and Non-Relativistic Fluids</li>
 
-          </ul>
-          <!-- More information about the society is available on it’s website:
+        <div class="clear">
+        </div>
+        <!-- ===================================== ABOUT CONFERENCE ======================================= -->
+
+        <div class="firstrow">
+            <div class="centred">
+                <div class="first_line wow fadeInDown">
+                </div>
+                <div class="first_title wow fadeInDown">
+                    <p>
+                        About ICGAC Conference 2k24
+                    </p>
+                </div>
+                <div class="first_description wow fadeInDown">
+                    <p style="text-align: justify;">
+                        International Conference on Gravitation, Astrophysics, and Cosmology aims to bring together leading academicians, scientists, researchers, and scholars to share and exchange their experiences, research findings, and results. It provides a premier platform
+                        for researchers to share, discuss, and present their research results on the most recent innovations, trends, and concerns, and practical challenges in all aspects of Gravitation, Astrophysics, and Cosmology. The scope of the conference
+                        extends to the following:
+                        <ul>
+                            <li> General Relativity
+                            </li>
+                            <li> Cosmology
+                            </li>
+                            <li> Astrophysics & Astronomy
+                            </li>
+                            <li> Theoretical Physics
+                            </li>
+                            <li>Black Holes</li>
+                            <li>Modified Gravity</li>
+                            <li>Differential Geometry</li>
+                            <li>Relativistic and Non-Relativistic Fluids</li>
+
+                        </ul>
+                        <!-- More information about the society is available on it’s website:
 
           <a href="https://tensorsociety.com/" target="_blank" style="color: rgb(110, 166, 166);">
             www.tensorsociety.com
           </a> -->
-          </p>
-        </div>
-      </div>
-      <div class="wow fadeIn first_image">
-      </div>
-
-      <br>
-      <br>
-    </div>
-
-    <div class="clear">
-    </div>
-
-    <!-- ======================================== MAIN LOG =============================================== -->
-    
-    
-    
-    <div id="speakers_menu">
-      <div class="speakers wow fadeIn">
-          <div class="wow fadeIn tabs_about">
-            <div class="mask">
-
-              <h1 style="color: white;">
-                <br>
-                C H I E F &nbsp; P A T R O N S
-              </h1>
-              <div class="tab-content">
-                <div id="sectionA" class="tab-pane fade in active">
-                  <ul class="about_columns">
-                    <li class="list">
-                      
-                      <ul>
-                        <li><strong>> Shri Narayan Das Agrawal </strong><br> Chancellor, GLA University, Mathura, India</li>
-                        <li><strong>> Prof. Durg Singh Chauhan </strong> <br>
-                          Pro-Chancellor, GLA University, Mathura, Indian</li>
-                        <br>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>    
-              </div>
-
-              <h1 style="color: white;">
-                <br>
-                P A T R O N S
-              </h1>
-              <div class="tab-content">
-                <div id="sectionA" class="tab-pane fade in active">
-                  <ul class="about_columns">
-                    <li class="list">
-                      
-                      <ul>
-                        <li><strong>> Prof. Phalguni Gupta</strong><br>Vice-Chancellor, GLA University, Mathura, India</li>
-                        <li><strong>> Prof. Anup Kumar Gupta</strong><br>ProVice-Chancellor, GLA University, Mathura, India</li>
-                        <br>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>    
-              </div>
-
-              <h1 style="color: white;">
-                <br>
-                C o n f e r e n c e &nbsp; C h a i r
-              </h1>
-
-              <div class="tab-content">
-                <div id="sectionA" class="tab-pane fade in active">
-                  <ul class="about_columns">
-                    <li class="list">
-                      
-                      <ul>
-                        <li><strong>> Prof. Anirudh Pradhan</strong> <br>Distinguished Professor & Director, CCASS, GLA University, Mathura, India</li>
-                        <br>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>    
-              </div>
-
-
-              <h1 style="color: white;">
-                <br>
-                C O N V E N E R
-              </h1>
-
-              <div class="tab-content">
-                <div id="sectionA" class="tab-pane fade in active">
-                  <ul class="about_columns">
-                    <li class="list">
-                      
-                      <ul>
-                        <li><strong>> Prof.Saibal Ray </strong> <br>Professor & Associate Director, CCASS, GLA
-                          University, Mathura, India
-                          Mob. No: +91-9163169796</li>
-                        <br>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>    
-              </div>
-      
-              <h1 style="color: white;">
-                <br>
-                O r g a n i z i n g &nbsp; S e c r e t a r i e s
-              </h1>
-
-              <div class="tab-content">
-                <div id="sectionA" class="tab-pane fade in active">
-                  <ul class="about_columns">
-                    <li class="list">
-                      
-                      <ul>
-                        <li><strong>> Dr. Dinesh Chandra Maurya</strong> <br>CCASS, GLA University, Mathura, India <br> Mob. +91-8810764934</li>
-                        <br>
-                        <li><strong>> Dr. Ashutosh Singh</strong><br>CCASS, GLA University, Mathura, India <br> Mob. +91-9628324945 </li>
-                        <br>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>    
-              </div>
-      
+                    </p>
+                </div>
             </div>
-      
-          </div>
-      </div>
-    </div>
-    
-    
-    
-    <!-- ================================================================================================== -->
+            <div class="wow fadeIn first_image">
+            </div>
 
-    <div class="wow fadeIn tabs_about">
-      <div class="mask">
-        <h1 style="color: white;">
-          <br>
-          L O C A L &nbsp;&nbsp; O R G A N I Z I N G &nbsp;&nbsp; C O M M I T T E E
-        </h1>
+            <br>
+            <br>
+        </div>
 
-        <div class="tab-content">
-          <div id="sectionA" class="tab-pane fade in active">
-            <ul class="about_columns">
-              <li class="list">
-                <!-- <div class="fa fa-star fa-1x">
+        <div class="clear">
+        </div>
+
+        <!-- ======================================== MAIN LOG =============================================== -->
+
+
+
+        <div id="speakers_menu">
+            <div class="speakers wow fadeIn">
+                <div class="wow fadeIn tabs_about">
+                    <div class="mask">
+
+                        <h1 style="color: white;">
+                            <br> C H I E F &nbsp; P A T R O N S
+                        </h1>
+                        <div class="tab-content">
+                            <div id="sectionA" class="tab-pane fade in active">
+                                <ul class="about_columns">
+                                    <li class="list">
+
+                                        <ul>
+                                            <li><strong>> Shri Narayan Das Agrawal </strong><br> Chancellor, GLA University, Mathura, India</li>
+                                            <li><strong>> Prof. Durg Singh Chauhan </strong> <br> Pro-Chancellor, GLA University, Mathura, Indian</li>
+                                            <br>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h1 style="color: white;">
+                            <br> P A T R O N S
+                        </h1>
+                        <div class="tab-content">
+                            <div id="sectionA" class="tab-pane fade in active">
+                                <ul class="about_columns">
+                                    <li class="list">
+
+                                        <ul>
+                                            <li><strong>> Prof. Phalguni Gupta</strong><br>Vice-Chancellor, GLA University, Mathura, India</li>
+                                            <li><strong>> Prof. Anup Kumar Gupta</strong><br>ProVice-Chancellor, GLA University, Mathura, India</li>
+                                            <br>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h1 style="color: white;">
+                            <br> C o n f e r e n c e &nbsp; C h a i r
+                        </h1>
+
+                        <div class="tab-content">
+                            <div id="sectionA" class="tab-pane fade in active">
+                                <ul class="about_columns">
+                                    <li class="list">
+
+                                        <ul>
+                                            <li><strong>> Prof. Anirudh Pradhan</strong> <br>Distinguished Professor & Director, CCASS, GLA University, Mathura, India</li>
+                                            <br>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <h1 style="color: white;">
+                            <br> C O N V E N E R
+                        </h1>
+
+                        <div class="tab-content">
+                            <div id="sectionA" class="tab-pane fade in active">
+                                <ul class="about_columns">
+                                    <li class="list">
+
+                                        <ul>
+                                            <li><strong>> Prof.Saibal Ray </strong> <br>Professor & Associate Director, CCASS, GLA University, Mathura, India Mob. No: +91-9163169796</li>
+                                            <br>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h1 style="color: white;">
+                            <br> O r g a n i z i n g &nbsp; S e c r e t a r i e s
+                        </h1>
+
+                        <div class="tab-content">
+                            <div id="sectionA" class="tab-pane fade in active">
+                                <ul class="about_columns">
+                                    <li class="list">
+
+                                        <ul>
+                                            <li><strong>> Dr. Dinesh Chandra Maurya</strong> <br>CCASS, GLA University, Mathura, India <br> Mob. +91-8810764934</li>
+                                            <br>
+                                            <li><strong>> Dr. Ashutosh Singh</strong><br>CCASS, GLA University, Mathura, India <br> Mob. +91-9628324945 </li>
+                                            <br>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- ================================================================================================== -->
+
+        <div class="wow fadeIn tabs_about">
+            <div class="mask">
+                <h1 style="color: white;">
+                    <br> L O C A L &nbsp;&nbsp; O R G A N I Z I N G &nbsp;&nbsp; C O M M I T T E E
+                </h1>
+
+                <div class="tab-content">
+                    <div id="sectionA" class="tab-pane fade in active">
+                        <ul class="about_columns">
+                            <li class="list">
+                                <!-- <div class="fa fa-star fa-1x">
               </div> -->
-                <!-- <h4>
+                                <!-- <h4>
                   L o c a l &nbsp; O r g a n i z i n g &nbsp; C O M M I T T E E</h4> -->
 
-                <!-- <ol>
+                                <!-- <ol>
                   <li>Design thinking: cognitive modes and learning styles</li>
                   <li>Design approaches, strategies, methodologies and tactics</li>
                   <li>Problem solving: recognition procedures, hypothesis developmen</li>
                   <li>The meaning of innovation and creativity, in theory and practice</li>
                 </ol> -->
-                <ul>
-                  <li><strong>> Prof. Umesh Kumar Sharma </strong>(Chairperson)</li>
-                  <li><strong>> Dr. Archana Dixit </strong>(Co-Chairperson)</li>
-                  <li><strong>> Dr. Ambuj Kumar Mishra </strong>(Co-Chairperson)</li>
-                  <li><strong>> Dr. Ajitesh Kumar </strong></li>
-                  <li><strong>> Dr. Benoy Kumar Singh </strong></li>
-                  <li><strong>> Dr. Lokesh Kumar Sharma </strong></li>
-                  <li><strong>> Dr. Dharmveer Singh </strong></li>
-                  &nbsp; &nbsp;and all the faculties of CCASS, GLA University, Mathura.
-                  <br>
-                </ul>
-              </li>
-            </ul>
-          </div>
+                                <ul>
+                                    <li><strong>> Prof. Umesh Kumar Sharma </strong>(Chairperson)</li>
+                                    <li><strong>> Dr. Archana Dixit </strong>(Co-Chairperson)</li>
+                                    <li><strong>> Dr. Ambuj Kumar Mishra </strong>(Co-Chairperson)</li>
+                                    <li><strong>> Dr. Ajitesh Kumar </strong></li>
+                                    <li><strong>> Dr. Benoy Kumar Singh </strong></li>
+                                    <li><strong>> Dr. Lokesh Kumar Sharma </strong></li>
+                                    <li><strong>> Dr. Dharmveer Singh </strong></li>
+                                    &nbsp; &nbsp;and all the faculties of CCASS, GLA University, Mathura.
+                                    <br>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
 
-        </div>
+                </div>
 
-        <h1 style="color: white;">
-          <br>
-          &nbsp;&nbsp; A D V I S O R Y &nbsp;&nbsp; C O M M I T T E E
-        </h1>
+                <h1 style="color: white;">
+                    <br> &nbsp;&nbsp; A D V I S O R Y &nbsp;&nbsp; C O M M I T T E E
+                </h1>
 
-        <div class="tab-content">
-          <div id="sectionA" class="tab-pane fade in active">
-            <ul class="about_columns">
-              <li class="list">
-                <!-- <div class="fa fa-star fa-1x">
+                <div class="tab-content">
+                    <div id="sectionA" class="tab-pane fade in active">
+                        <ul class="about_columns">
+                            <li class="list">
+                                <!-- <div class="fa fa-star fa-1x">
               </div> -->
-                <h4>
-                  N A T I O N A L &nbsp; A D V I S O R Y &nbsp; C O M M I T T E E</h4>
+                                <h4>
+                                    N A T I O N A L &nbsp; A D V I S O R Y &nbsp; C O M M I T T E E</h4>
 
-                <!-- <ol>
+                                <!-- <ol>
                   <li>Design thinking: cognitive modes and learning styles</li>
                   <li>Design approaches, strategies, methodologies and tactics</li>
                   <li>Problem solving: recognition procedures, hypothesis developmen</li>
                   <li>The meaning of innovation and creativity, in theory and practice</li>
                 </ol> -->
-                <ul>
-                  <li><strong>> Shri A.K. Singh</strong> (Registrar, GLA University, Mathura)</li>
-                  <li><strong>> Prof. A. Bhattacharya</strong> (Jadavpur Univ., Kolkata)</li>
-                  <li><strong>> Prof. A.K. Yadav</strong> (UCER, Greater Noida)</li>
-                  <li><strong>> Prof. A.H. Hasmani</strong> (SPU, Gujarat)</li>
-                  <li><strong>> Prof. B. Mishra</strong> (BITS Hyderabad)</li>
-                  <li><strong>> Prof. C.P. Singh</strong> (DTU, New Delhi)</li>
-                  <li><strong>> Prof. C.S. Bagewadi</strong> (Kuvempu University, Karnataka)</li>
-                  <li><strong>> Prof. D.D. Pawar</strong> (SRTM University, Nanded)</li>
-                  <li><strong>> Prof. F. Rahaman</strong> (Jadavpur University, Kolkata)</li>
-                  <li><strong>> Prof. G.K. Goswami</strong> (NSUT, New Delhi)</li>
-                  <li><strong>> Prof. G.P. Singh</strong> (VNIT, Nagpur)</li>
-                  <li><strong>> Prof. G.S. Khadekar</strong> (R.T.M. Nagpur University, Nagpur)</li>
-                  <li><strong>> Prof. J.K. Singh</strong> (NSUT, New Delhi)</li>
-                  <li><strong>> Prof. J. Upreti</strong> (KU, Almora)</li>
-                  <li><strong>> Prof. K Adhav</strong> (Indira Gandhi National Tribal University, Amarkantak)</li>
-                  <li><strong>> Prof. M. Majumdar</strong> (UC, Kolkata)</li>
-                  <li><strong>> Prof. M.M. Tripathi</strong> (BHU, Varanasi)</li>
-                  <li><strong>> Prof. P.K. Sahoo</strong> (BITS Hyderabad)</li>
-                  <li><strong>> Prof. R. Chaubey</strong> (BHU, Varanasi)</li>
-                  <li><strong>> Prof. R. Kumar</strong> (PU, Patiala)</li>
-                  <li><strong>> Prof. S. Ali</strong> (SRMCEM, Lucknow)</li>
-                  <li><strong>> Prof. S.G. Ghosh</strong> (CTP-Jamia Millia Islamiais is, New Delhi)</li>
-                  <li><strong>> Prof. S.K. Narsimhamurthy</strong> (Kuvempu University)</li>
-                  <li><strong>> Prof. S.K. Tripathy</strong> (IGIT, Bhavaneswar)</li>
-                  <li><strong>> Prof. V.N. Pathak</strong> (SRMU, Lucknow)</li>
-                  <li><strong>> Prof. Z. Ashan</strong> (AMU, Aligarh)</li>
-                  <br>
-                </ul>
+                                <ul>
+                                    <li><strong>> Shri A.K. Singh</strong> (Registrar, GLA University, Mathura)</li>
+                                    <li><strong>> Prof. A. Bhattacharya</strong> (Jadavpur Univ., Kolkata)</li>
+                                    <li><strong>> Prof. A.K. Yadav</strong> (UCER, Greater Noida)</li>
+                                    <li><strong>> Prof. A.H. Hasmani</strong> (SPU, Gujarat)</li>
+                                    <li><strong>> Prof. B. Mishra</strong> (BITS Hyderabad)</li>
+                                    <li><strong>> Prof. C.P. Singh</strong> (DTU, New Delhi)</li>
+                                    <li><strong>> Prof. C.S. Bagewadi</strong> (Kuvempu University, Karnataka)</li>
+                                    <li><strong>> Prof. D.D. Pawar</strong> (SRTM University, Nanded)</li>
+                                    <li><strong>> Prof. F. Rahaman</strong> (Jadavpur University, Kolkata)</li>
+                                    <li><strong>> Prof. G.K. Goswami</strong> (NSUT, New Delhi)</li>
+                                    <li><strong>> Prof. G.P. Singh</strong> (VNIT, Nagpur)</li>
+                                    <li><strong>> Prof. G.S. Khadekar</strong> (R.T.M. Nagpur University, Nagpur)</li>
+                                    <li><strong>> Prof. J.K. Singh</strong> (NSUT, New Delhi)</li>
+                                    <li><strong>> Prof. J. Upreti</strong> (KU, Almora)</li>
+                                    <li><strong>> Prof. K Adhav</strong> (Indira Gandhi National Tribal University, Amarkantak)</li>
+                                    <li><strong>> Prof. M. Majumdar</strong> (UC, Kolkata)</li>
+                                    <li><strong>> Prof. M.M. Tripathi</strong> (BHU, Varanasi)</li>
+                                    <li><strong>> Prof. P.K. Sahoo</strong> (BITS Hyderabad)</li>
+                                    <li><strong>> Prof. R. Chaubey</strong> (BHU, Varanasi)</li>
+                                    <li><strong>> Prof. R. Kumar</strong> (PU, Patiala)</li>
+                                    <li><strong>> Prof. S. Ali</strong> (SRMCEM, Lucknow)</li>
+                                    <li><strong>> Prof. S.G. Ghosh</strong> (CTP-Jamia Millia Islamiais is, New Delhi)</li>
+                                    <li><strong>> Prof. S.K. Narsimhamurthy</strong> (Kuvempu University)</li>
+                                    <li><strong>> Prof. S.K. Tripathy</strong> (IGIT, Bhavaneswar)</li>
+                                    <li><strong>> Prof. V.N. Pathak</strong> (SRMU, Lucknow)</li>
+                                    <li><strong>> Prof. Z. Ashan</strong> (AMU, Aligarh)</li>
+                                    <br>
+                                </ul>
 
-                <h4 style="width: 120%;">
-                  I N T E R N A T I O N A L &nbsp; A D V I S O R Y &nbsp; C O M M I T T E E</h4>
+                                <h4 style="width: 120%;">
+                                    I N T E R N A T I O N A L &nbsp; A D V I S O R Y &nbsp; C O M M I T T E E</h4>
 
-                <ul>
-                  <li><strong>> Prof. A. DeBenedictis</strong> (Simon Fraser University, Canada)</li>
-                  <li><strong>> Prof. A. Beesham</strong> (MUT, South Africa)</li>
-                  <li><strong>> Prof. I. Radinschi</strong> (Gheorghe Asachi Technical University, Romania)</li>
-                  <li><strong>> Prof. J. Ovalle</strong> (Silesian University, Opava)</li>
-                  <li><strong>> Prof. K. Bamba</strong> (Nagoya University, Japan)</li>
-                  <li><strong>> Prof. L. Herrera</strong> (Uni.de Salamanca, Spain)</li>
-                  <li><strong>> Prof. M. Khlopov</strong> (Universit´e Paris Cit´e, France)</li>
-                  <li><strong>> Prof. S. Capozziello</strong> (Università “Federico II” di Napoli, Italy)</li>
-                  <li><strong>> Prof. S.D. Odintsov</strong> (ICREA, Barcelona, Spain)</li>
-                  <li><strong>> Prof. S. Krishnannair</strong> (UniZulu, South Africa)</li>
-                  <li><strong>> Prof. S.V. Ketov</strong> (Tokyo Metropolitan University, Japan)</li>
-                  <li><strong>> Prof. T. Grammenos</strong> (University of Thessaly, Greece)</li>
-                </ul>
-                <br>
-              </li>
-            </ul>
-          </div>
+                                <ul>
+                                    <li><strong>> Prof. A. DeBenedictis</strong> (Simon Fraser University, Canada)</li>
+                                    <li><strong>> Prof. A. Beesham</strong> (MUT, South Africa)</li>
+                                    <li><strong>> Prof. I. Radinschi</strong> (Gheorghe Asachi Technical University, Romania)</li>
+                                    <li><strong>> Prof. J. Ovalle</strong> (Silesian University, Opava)</li>
+                                    <li><strong>> Prof. K. Bamba</strong> (Nagoya University, Japan)</li>
+                                    <li><strong>> Prof. L. Herrera</strong> (Uni.de Salamanca, Spain)</li>
+                                    <li><strong>> Prof. M. Khlopov</strong> (Universit´e Paris Cit´e, France)</li>
+                                    <li><strong>> Prof. S. Capozziello</strong> (Università “Federico II” di Napoli, Italy)</li>
+                                    <li><strong>> Prof. S.D. Odintsov</strong> (ICREA, Barcelona, Spain)</li>
+                                    <li><strong>> Prof. S. Krishnannair</strong> (UniZulu, South Africa)</li>
+                                    <li><strong>> Prof. S.V. Ketov</strong> (Tokyo Metropolitan University, Japan)</li>
+                                    <li><strong>> Prof. T. Grammenos</strong> (University of Thessaly, Greece)</li>
+                                </ul>
+                                <br>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
-      </div>
 
     </div>
-
-  </div>
-  <!-- End About -->
-  <div id="schedule_menu">
-    <div class="gap">
-    </div>
-    <div class="first_line wow fadeInDown">
-    </div>
-    <div class="first_title">
-      <p class=" wow fadeInDown">
-        SCHEDULE
-      </p>
-    </div>
-    <div class="first_description">
-      <p class=" wow fadeInDown">
-        <b>14th-16th of June, 2024 | TBI Block, GLA University, Mathura</b><br>
-      </p>
-    </div>
-    <div class="mini_gap">
-    </div>
-    <div id="sh_carousel" class="carousel slide">
-      <!-- Carousel indicators -->
-      <div class="carousel-indicators">
-        <div class=" wow fadeInUp active btn eventime_button graybtn graytxt" data-target="#sh_carousel"
-          data-slide-to="0">
-          Opening day
-        </div>
-        <div class=" wow fadeInDown btn eventime_button graybtn graytxt" data-target="#sh_carousel" data-slide-to="1">
-          Second Day
-        </div>
-        <div class=" wow fadeInUp btn eventime_button graybtn graytxt" data-target="#sh_carousel" data-slide-to="2">
-          Third Day
-        </div>
-      </div>
-      <!-- Carousel items -->
-      <div class="carousel-inner">
-
-        <!-- =========== Day 1 Schedule =========== -->
-
-        <div class="active item">
-          <!-- DAY ONE -->
-          <div class="schedule_date wow fadeInLeft">
-            14
-          </div>
-          <div class="schedule_month wow fadeInRight">
-            June
-          </div>
-          <!-- Accordion item -->
-          <div class="mini_gap">
-          </div>
-          <div id="accordion1">
-            <div class="panel wow fadeInDown">
-              <a data-toggle="collapse" data-parent="#accordion1" href="#one_one">
-                <div class="accordion_left">
-                  <div class="accordions_titles_small">
-                    <p class="accordion_date">
-                      9:00-9:30 a.m.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion_right">
-                  <div class="accordions_titles_small">
-                    <div class="accordion_description">
-                      <p>
-                        Registration
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Accordion item -->
-            <div class="mini_gap">
-            </div>
-            <div class="panel wow fadeInDown">
-              <a data-toggle="collapse" data-parent="#accordion1" href="#one_two">
-                <div class="accordion_left">
-                  <div class="accordions_titles">
-                    <p class="accordion_date">
-                      9:30-11:30 a.m.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion_right">
-                  <div class="accordions_titles">
-                    <div class="accordion_description">
-                      <p>
-                        Inaugural Event
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Accordion item -->
-            <div class="mini_gap">
-            </div>
-            <div class="panel wow fadeInDown">
-              <a data-toggle="collapse" data-parent="#accordion1" href="#one_three">
-                <div class="accordion_left">
-                  <div class="accordions_titles_big">
-                    <p class="accordion_date">
-                      11:30 - 2:00 p.m.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion_right">
-                  <div class="accordions_titles_big">
-                    <div class="accordion_description">
-                      <p>
-                       Key Note / Plenary Talks
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-        
-            <!-- Accordion item -->
-            <div class="mini_gap">
-            </div>
-
-            <div class="mini_gap">
-            </div>
-            <a href="#reservation_menu" class="schedule_reservation wow btn eventime_button  fadeInRight">
-              Make Registration
-            </a>
-            <!-- End of the accordion -->
-          </div>
-          <!-- End of the day -->
-        </div>
-
-        <!-- =========== Day 2 Schedule =========== -->
-
-        <div class="item">
-          <!-- DAY TWO -->
-          <div class="schedule_date wow fadeInLeft">
-            15
-          </div>
-          <div class="schedule_month wow fadeInRight">
-            June
-          </div>
-          <!-- Accordion item -->
-          <div id="accordion2">
-            <div class="mini_gap">
-            </div>
-            <div class="wow fadeInDown panel">
-              <a data-toggle="collapse" data-parent="#accordion2" href="#two_one">
-                <div class="accordion_left">
-                  <div class="accordions_titles">
-                    <p class="accordion_date">
-                      9:30-11:30 a.m.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion_right">
-                  <div class="accordions_titles">
-                    <div class="accordion_description">
-                      <p>
-                        Technical Session
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Accordion item -->
-
-            <div class="panel wow fadeInDown">
-              <a data-toggle="collapse" data-parent="#accordion1" href="#one_three">
-                <div class="accordion_left">
-                  <div class="accordions_titles_big">
-                    <p class="accordion_date">
-                      11:30 - 2:00 p.m.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion_right">
-                  <div class="accordions_titles_big">
-                    <div class="accordion_description">
-                      <p>
-                       Plenary / Invited Talks
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-        
-            <!-- Accordion item -->
-            <div class="mini_gap">
-            </div>
-
-            <div class="mini_gap">
-            </div>
-            <div class="panel wow fadeInDown">
-              <a data-toggle="collapse" data-parent="#accordion2" href="#two_four">
-                <div class="accordion_left">
-                  <div class="accordions_titles">
-                    <p class="accordion_date">
-                      3:00 - 5:00 p.m.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion_right">
-                  <div class="accordions_titles">
-                    <div class="accordion_description">
-                      <p>
-                        Technical Session
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="mini_gap">
-            </div>
-            <a href="#reservation_menu" class="schedule_reservation wow btn eventime_button  fadeInRight">
-              Make Registration
-            </a>
-            <!-- End of the accordion -->
-          </div>
-          <!-- End of the day -->
-        </div>
-
-        <!-- =========== Day 3 Schedule =========== -->
-
-        <div class="item">
-          <!-- DAY THREE -->
-          <div class="schedule_date wow fadeInLeft">
-            16
-          </div>
-          <div class="schedule_month wow fadeInRight">
-            June
-          </div>
-          <!-- Accordion item -->
-          <div class="mini_gap">
-          </div>
-          <div id="accordion3">
-            <div class="wow fadeInDown panel">
-              <a data-toggle="collapse" data-parent="#accordion3" href="#three_one">
-                <div class="accordion_left">
-                  <div class="accordions_titles">
-                    <p class="accordion_date">
-                      9:30 - 2:00 p.m.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion_right">
-                  <div class="accordions_titles">
-                    <div class="accordion_description">
-                      <p>
-                        Technical Session
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="mini_gap">
-            </div>
-
-            <div class="wow fadeInDown panel">
-              <a data-toggle="collapse" data-parent="#accordion3" href="#three_one">
-                <div class="accordion_left">
-                  <div class="accordions_titles">
-                    <p class="accordion_date">
-                      3:00 - 4:00 p.m.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion_right">
-                  <div class="accordions_titles">
-                    <div class="accordion_description">
-                      <p>
-                        Valedictory Session
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Accordion item -->
-            <div class="mini_gap">
-            </div>
-            <div class="mini_gap">
-            </div>
-            <a href="#reservation_menu" class="schedule_reservation wow btn eventime_button  fadeInRight">
-              Make Registration
-            </a>
-            <!-- End of the accordion -->
-          </div>
-          <!-- End of the day -->
-        </div>
-
-        <!-- Carousel nav -->
-        <a class="left_arrow wow fadeInLeft" href="#sh_carousel" data-slide="prev">
-          <svg width="26px" height="48">
-            <polygon points="3.3,24.5 25.5,2.3 24,0.8 0.3,24.5 24,48.2 25.5,46.7" />
-          </svg>
-        </a>
-        <a class="right_arrow wow fadeInRight" href="#sh_carousel" data-slide="next">
-          <svg width="26px" height="48">
-            <polygon points="22.5,24.5 0.3,2.3 1.8,0.8 25.5,24.5 1.8,48.2 0.3,46.7" />
-          </svg>
-        </a>
+    <!-- End About -->
+    <div id="schedule_menu">
         <div class="gap">
         </div>
-      </div>
+        <div class="first_line wow fadeInDown">
+        </div>
+        <div class="first_title">
+            <p class=" wow fadeInDown">
+                SCHEDULE
+            </p>
+        </div>
+        <div class="first_description">
+            <p class=" wow fadeInDown">
+                <b>14th-16th of June, 2024 | TBI Block, GLA University, Mathura</b><br>
+            </p>
+        </div>
+        <div class="mini_gap">
+        </div>
+        <div id="sh_carousel" class="carousel slide">
+            <!-- Carousel indicators -->
+            <div class="carousel-indicators">
+                <div class=" wow fadeInUp active btn eventime_button graybtn graytxt" data-target="#sh_carousel" data-slide-to="0">
+                    Opening day
+                </div>
+                <div class=" wow fadeInDown btn eventime_button graybtn graytxt" data-target="#sh_carousel" data-slide-to="1">
+                    Second Day
+                </div>
+                <div class=" wow fadeInUp btn eventime_button graybtn graytxt" data-target="#sh_carousel" data-slide-to="2">
+                    Third Day
+                </div>
+            </div>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+
+                <!-- =========== Day 1 Schedule =========== -->
+
+                <div class="active item">
+                    <!-- DAY ONE -->
+                    <div class="schedule_date wow fadeInLeft">
+                        14
+                    </div>
+                    <div class="schedule_month wow fadeInRight">
+                        June
+                    </div>
+                    <!-- Accordion item -->
+                    <div class="mini_gap">
+                    </div>
+                    <div id="accordion1">
+                        <div class="panel wow fadeInDown">
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#one_one">
+                                <div class="accordion_left">
+                                    <div class="accordions_titles_small">
+                                        <p class="accordion_date">
+                                            9:00-9:30 a.m.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion_right">
+                                    <div class="accordions_titles_small">
+                                        <div class="accordion_description">
+                                            <p>
+                                                Registration
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Accordion item -->
+                        <div class="mini_gap">
+                        </div>
+                        <div class="panel wow fadeInDown">
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#one_two">
+                                <div class="accordion_left">
+                                    <div class="accordions_titles">
+                                        <p class="accordion_date">
+                                            9:30-11:30 a.m.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion_right">
+                                    <div class="accordions_titles">
+                                        <div class="accordion_description">
+                                            <p>
+                                                Inaugural Event
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Accordion item -->
+                        <div class="mini_gap">
+                        </div>
+                        <div class="panel wow fadeInDown">
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#one_three">
+                                <div class="accordion_left">
+                                    <div class="accordions_titles_big">
+                                        <p class="accordion_date">
+                                            11:30 - 2:00 p.m.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion_right">
+                                    <div class="accordions_titles_big">
+                                        <div class="accordion_description">
+                                            <p>
+                                                Key Note / Plenary Talks
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Accordion item -->
+                        <div class="mini_gap">
+                        </div>
+
+                        <div class="mini_gap">
+                        </div>
+                        <a href="#reservation_menu" class="schedule_reservation wow btn eventime_button  fadeInRight">
+              Make Registration
+            </a>
+                        <!-- End of the accordion -->
+                    </div>
+                    <!-- End of the day -->
+                </div>
+
+                <!-- =========== Day 2 Schedule =========== -->
+
+                <div class="item">
+                    <!-- DAY TWO -->
+                    <div class="schedule_date wow fadeInLeft">
+                        15
+                    </div>
+                    <div class="schedule_month wow fadeInRight">
+                        June
+                    </div>
+                    <!-- Accordion item -->
+                    <div id="accordion2">
+                        <div class="mini_gap">
+                        </div>
+                        <div class="wow fadeInDown panel">
+                            <a data-toggle="collapse" data-parent="#accordion2" href="#two_one">
+                                <div class="accordion_left">
+                                    <div class="accordions_titles">
+                                        <p class="accordion_date">
+                                            9:30-11:30 a.m.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion_right">
+                                    <div class="accordions_titles">
+                                        <div class="accordion_description">
+                                            <p>
+                                                Technical Session
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Accordion item -->
+
+                        <div class="panel wow fadeInDown">
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#one_three">
+                                <div class="accordion_left">
+                                    <div class="accordions_titles_big">
+                                        <p class="accordion_date">
+                                            11:30 - 2:00 p.m.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion_right">
+                                    <div class="accordions_titles_big">
+                                        <div class="accordion_description">
+                                            <p>
+                                                Plenary / Invited Talks
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Accordion item -->
+                        <div class="mini_gap">
+                        </div>
+
+                        <div class="mini_gap">
+                        </div>
+                        <div class="panel wow fadeInDown">
+                            <a data-toggle="collapse" data-parent="#accordion2" href="#two_four">
+                                <div class="accordion_left">
+                                    <div class="accordions_titles">
+                                        <p class="accordion_date">
+                                            3:00 - 5:00 p.m.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion_right">
+                                    <div class="accordions_titles">
+                                        <div class="accordion_description">
+                                            <p>
+                                                Technical Session
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mini_gap">
+                        </div>
+                        <a href="#reservation_menu" class="schedule_reservation wow btn eventime_button  fadeInRight">
+              Make Registration
+            </a>
+                        <!-- End of the accordion -->
+                    </div>
+                    <!-- End of the day -->
+                </div>
+
+                <!-- =========== Day 3 Schedule =========== -->
+
+                <div class="item">
+                    <!-- DAY THREE -->
+                    <div class="schedule_date wow fadeInLeft">
+                        16
+                    </div>
+                    <div class="schedule_month wow fadeInRight">
+                        June
+                    </div>
+                    <!-- Accordion item -->
+                    <div class="mini_gap">
+                    </div>
+                    <div id="accordion3">
+                        <div class="wow fadeInDown panel">
+                            <a data-toggle="collapse" data-parent="#accordion3" href="#three_one">
+                                <div class="accordion_left">
+                                    <div class="accordions_titles">
+                                        <p class="accordion_date">
+                                            9:30 - 2:00 p.m.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion_right">
+                                    <div class="accordions_titles">
+                                        <div class="accordion_description">
+                                            <p>
+                                                Technical Session
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mini_gap">
+                        </div>
+
+                        <div class="wow fadeInDown panel">
+                            <a data-toggle="collapse" data-parent="#accordion3" href="#three_one">
+                                <div class="accordion_left">
+                                    <div class="accordions_titles">
+                                        <p class="accordion_date">
+                                            3:00 - 4:00 p.m.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion_right">
+                                    <div class="accordions_titles">
+                                        <div class="accordion_description">
+                                            <p>
+                                                Valedictory Session
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Accordion item -->
+                        <div class="mini_gap">
+                        </div>
+                        <div class="mini_gap">
+                        </div>
+                        <a href="#reservation_menu" class="schedule_reservation wow btn eventime_button  fadeInRight">
+              Make Registration
+            </a>
+                        <!-- End of the accordion -->
+                    </div>
+                    <!-- End of the day -->
+                </div>
+
+                <!-- Carousel nav -->
+                <a class="left_arrow wow fadeInLeft" href="#sh_carousel" data-slide="prev">
+                    <svg width="26px" height="48">
+            <polygon points="3.3,24.5 25.5,2.3 24,0.8 0.3,24.5 24,48.2 25.5,46.7" />
+          </svg>
+                </a>
+                <a class="right_arrow wow fadeInRight" href="#sh_carousel" data-slide="next">
+                    <svg width="26px" height="48">
+            <polygon points="22.5,24.5 0.3,2.3 1.8,0.8 25.5,24.5 1.8,48.2 0.3,46.7" />
+          </svg>
+                </a>
+                <div class="gap">
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- End Schedule -->
+    <!-- End Schedule -->
 
-  <!-- =================================================================================================== -->
+    <!-- =================================================================================================== -->
 
-  <div class="wow fadeIn tabs_about">
-    <div class="mask">
-      <br>
-      <h1 style="color: white;">
-        O U R &nbsp;&nbsp; S P E A K E R S
-      </h1>
-      <ul class="menu_tabs" role="tablist">
-        <!-- <li class="active">
+    <div class="wow fadeIn tabs_about">
+        <div class="mask">
+            <br>
+            <h1 style="color: white;">
+                O U R &nbsp;&nbsp; S P E A K E R S
+            </h1>
+            <ul class="menu_tabs" role="tablist">
+                <!-- <li class="active">
           <a class="wow fadeInDown btn eventime_button graybtn active" data-toggle="tab" role="button"
             href="#sectionA">
             NATIONAL </a>
         </li> -->
-      </ul>
-      <div class="tab-content">
-        <div id="ourSpeakers" class="tab-pane fade in active">
-          <ul class="about_columns">
-            <li class="list" style="width: 90%;">
-              <div class="fa fa-star fa-1x">
-              </div>
+            </ul>
+            <div class="tab-content">
+                <div id="ourSpeakers" class="tab-pane fade in active">
+                    <ul class="about_columns">
+                        <li class="list" style="width: 90%;">
+                            <div class="fa fa-star fa-1x">
+                            </div>
 
-              <h4>
-                NATIONAL AND INTERNATIONAL SPEAKERS</h4>
+                            <h4>
+                                NATIONAL AND INTERNATIONAL SPEAKERS</h4>
 
-              <!-- <ol>
+                            <!-- <ol>
                 <li>Design thinking: cognitive modes and learning styles</li>
                 <li>Design approaches, strategies, methodologies and tactics</li>
                 <li>Problem solving: recognition procedures, hypothesis developmen</li>
                 <li>The meaning of innovation and creativity, in theory and practice</li>
               </ol> -->
-              <ul>
-                <li>> <strong>Prof. Durgesh Tripathi </strong> || Inter-University Centre for Astronomy and Astrophysics
-                  (IUCAA), Pune, India</li>
-                <li>> <strong>Prof. Maxim. Yu. Khlopov </strong>|| Virtual Institute of Astroparticle Physics,
-                  Paris, France</li>
-                <li>> <strong>Prof. Kazuharu Bamba </strong>|| Fukushima University, Japan</li>
-                <li>> <strong>Prof. I. Radinschi </strong>|| GATU, Romania</li>
-                <li>> <strong>Prof. A. DeBenedictis </strong>|| Simon Fraser University, Canada</li>
-                <li>> <strong>Prof. S. Capozziello </strong>|| Universita' di Napoli ""Federico II"", Complesso
-                  Universitario di Monte S. Angelo Via Cinthia, Ed. N I-80126 Napoli Italy</li>
-                <li>> <strong>Prof. L. Herrera </strong>|| Universidad de Salamanca Spain</li>
-                <li>> <strong>Prof. Sergey V. Ketov </strong>|| Tokyo Metropolitan University, Tokyo, Japan</li>
-                <li>> <strong>Prof. A. Beesham </strong>|| Mangosuthu University of Technology, South Africa</li>
-                <li>> <strong>Prof. S. Krishnannair </strong>|| University of Zululand, South Africa</li>
-                <li>> <strong>Prof. G.P. Singh </strong> || Visvesvaraya National Institute of Technology, Nagpur</li>
-                <li>> <strong>Dr. Pankaj Kushwaha </strong> || Indian Institutes of Science Education and Research,
-                  Mohali</li>
-                <li>> <strong>Prof. Farook Rahaman </strong>|| Jadavpur University, Kolkata</li>
-                <li>> <strong>Prof. Bivudutta Mishra </strong>|| Birla Institute of Technology & Science, Pilani,
-                  Hyderabad Campus</li>
-                <li>> <strong>Prof. S.K. Tripathy </strong>|| Indira Gandhi Institute Of Technology, Sarang</li>
-                <li>> <strong>Prof. A.K. Yadav </strong>|| United College of Engineering & Research, Greater Noida,
-                  India</li>
-                <li>> <strong>Prof. G.S. Khadekar </strong>|| Department of Mathematics, R.T.M. Nagpur University,
-                  Nagpur</li>
-                <li>> <strong>Prof. C.P. Singh </strong>|| Department of Applied Mathematics, D.T.U, Bawana Road,
-                  Delhi-110042, India</li>
-                <li>> <strong>Prof. S.G. Ghosh </strong>|| CTP-Jamia Millia Islamia, New Delhi</li>
-                <li>> <strong>Prof. G.K. Goswami </strong>|| Netaji Subhas University of Technology, New Delhi</li>
-                <li>> <strong>Prof. D.D. Pawar </strong>|| Swami Ramanand Teerth Marathwada University , Nanded</li>
-                <li>> <strong>Prof. P.K. Sahoo </strong> || Birla Institute of Technology & Science, Pilani, Hyderabad
-                  Campus</li>
-                <li>> <strong>Prof. J.K. Singh </strong>|| Netaji Subhas University of Technology, New Delhi</li>
-                <li>> <strong>Prof. GaureeShanker </strong>|| Department of Mathematics and Statistics, Central
-                  University of Punjab, Bathinda-151001</li>
-                <li>> <strong>Prof. Rakesh Kumar </strong>|| Department of Mathematics, Punjabi University, Patiala,
-                  India</li>
-                <li>> <strong>Prof. Sudhir Kumar Srivastava </strong>|| Department of Mathematics and Statistics, DDU
-                  Gorakhpir University, Gorakhpur</li>
-                <li>> <strong>Prof. A.H. Hasmani </strong>|| Department of Mathematics, Sardar Patel University, Vallabh
-                  Vidyanagar, 3388120, India</li>
-                <li>> <strong>Dr. Jibitesh Dutta </strong>|| Department of Basic Sciences and Social Sciences, NEHU,
-                  Shillong -793022, India</li>
-                  <li>><strong> Prof. R. Chaubey</strong> || Banaras Hindu University, Varanasi, India</li>
+                            <ul>
+                                <li>> <strong>Prof. Durgesh Tripathi </strong> || Inter-University Centre for Astronomy and Astrophysics (IUCAA), Pune, India</li>
+                                <li>> <strong>Prof. Maxim. Yu. Khlopov </strong>|| Virtual Institute of Astroparticle Physics, Paris, France</li>
+                                <li>> <strong>Prof. Kazuharu Bamba </strong>|| Fukushima University, Japan</li>
+                                <li>> <strong>Prof. I. Radinschi </strong>|| GATU, Romania</li>
+                                <li>> <strong>Prof. A. DeBenedictis </strong>|| Simon Fraser University, Canada</li>
+                                <li>> <strong>Prof. S. Capozziello </strong>|| Universita' di Napoli ""Federico II"", Complesso Universitario di Monte S. Angelo Via Cinthia, Ed. N I-80126 Napoli Italy</li>
+                                <li>> <strong>Prof. L. Herrera </strong>|| Universidad de Salamanca Spain</li>
+                                <li>> <strong>Prof. Sergey V. Ketov </strong>|| Tokyo Metropolitan University, Tokyo, Japan</li>
+                                <li>> <strong>Prof. A. Beesham </strong>|| Mangosuthu University of Technology, South Africa</li>
+                                <li>> <strong>Prof. S. Krishnannair </strong>|| University of Zululand, South Africa</li>
+                                <li>> <strong>Prof. G.P. Singh </strong> || Visvesvaraya National Institute of Technology, Nagpur</li>
+                                <li>> <strong>Dr. Pankaj Kushwaha </strong> || Indian Institutes of Science Education and Research, Mohali
+                                </li>
+                                <li>> <strong>Prof. Farook Rahaman </strong>|| Jadavpur University, Kolkata</li>
+                                <li>> <strong>Prof. Bivudutta Mishra </strong>|| Birla Institute of Technology & Science, Pilani, Hyderabad Campus</li>
+                                <li>> <strong>Prof. S.K. Tripathy </strong>|| Indira Gandhi Institute Of Technology, Sarang</li>
+                                <li>> <strong>Prof. A.K. Yadav </strong>|| United College of Engineering & Research, Greater Noida, India
+                                </li>
+                                <li>> <strong>Prof. G.S. Khadekar </strong>|| Department of Mathematics, R.T.M. Nagpur University, Nagpur
+                                </li>
+                                <li>> <strong>Prof. C.P. Singh </strong>|| Department of Applied Mathematics, D.T.U, Bawana Road, Delhi-110042, India</li>
+                                <li>> <strong>Prof. S.G. Ghosh </strong>|| CTP-Jamia Millia Islamia, New Delhi</li>
+                                <li>> <strong>Prof. G.K. Goswami </strong>|| Netaji Subhas University of Technology, New Delhi</li>
+                                <li>> <strong>Prof. D.D. Pawar </strong>|| Swami Ramanand Teerth Marathwada University , Nanded</li>
+                                <li>> <strong>Prof. P.K. Sahoo </strong> || Birla Institute of Technology & Science, Pilani, Hyderabad Campus
+                                </li>
+                                <li>> <strong>Prof. J.K. Singh </strong>|| Netaji Subhas University of Technology, New Delhi</li>
+                                <li>> <strong>Prof. Gauree Shanker </strong>|| Department of Mathematics and Statistics, Central University of Punjab, Bathinda-151001</li>
+                                <li>> <strong>Prof. Rakesh Kumar </strong>|| Department of Mathematics, Punjabi University, Patiala, India
+                                </li>
+                                <li>> <strong>Prof. Sudhir Kumar Srivastava </strong>|| Department of Mathematics and Statistics, DDU Gorakhpir University, Gorakhpur</li>
+                                <li>> <strong>Prof. A.H. Hasmani </strong>|| Department of Mathematics, Sardar Patel University, Vallabh Vidyanagar, 3388120, India</li>
+                                <li>> <strong>Dr. Jibitesh Dutta </strong>|| Department of Basic Sciences and Social Sciences, NEHU, Shillong -793022, India</li>
+                                <li>><strong> Prof. R. Chaubey</strong> || Banaras Hindu University, Varanasi, India</li>
 
-                <br>
+                                <li>> <strong>Dr. Rajesh Kumar</strong> || Department of Mathematics and Statistics, DDU Gorakhpur University, Gorakhpur, India</li>
+                                <li>> <strong>Prof. Sergey Odintsov</strong> || Institut de Ciències de l'Espai (CSIC - ICE), Spain</li>
+                                <li>> <strong>Prof. Mohammad Sami</strong> || Centre for Cosmology and Science Popularization (CCSP), SGT University, Gurugram, Haryana, INDIA</li>
+                                <li>> <strong>Prof. Mukut Mani Tripathi </strong>|| Department of Mathematics, BHU, Varanasi, India</li>
+                                <li>> <strong>Prof. T. Venktesh </strong>|| Mathematical Sciences Institute, Belgavi, Goa, India</li>
+                                <li>> <strong>Prof. H.G. Nagaraj </strong>|| Department of Mathematics, Bangalore University, Karnataka, India </li>
+                                <li>> <strong>Prof. Bankteshwar Tiwari </strong>|| DST-CIMS BHU, Varanasi, India </li>
+                                <li>> <strong>Prof. Absos Ali Shaikh </strong>|| Department of Mathematics, University of Burdwan Golapbag, Burdwan-713 104, India </li>
+                                <li>> <strong>Prof. G.K. Goswami</strong> || Netaji Subhas University of Technology, New Delhi, India</li>
+                                <br>
 
-              </ul>
-            </li>
-          </ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- ================================= PRICING TABLE ======================================= -->
-
-  <div class="pricing_tables">
-    <div class="gap">
-    </div>
-    <div class="first_line">
-    </div>
-    <div class="first_title">
-      <p>
-        R E G I S T R A T I O N &nbsp; F E E
-      </p>
     </div>
 
-    <div class="allcontent_bootstrap">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="pricing_ticket wow fadeInUp">
-              <p class="ticket_name" style="font-size: 22px;">
-                Faculty Members
-              </p>
-              <div class="ticket_line">
-              </div>
-              <div class="ticket_price">
-                <span>₹</span>3000
-              </div>
-              <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="60px" height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50" xml:space="preserve">
-                  <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
-  57.875,27.368 57.879,27.372 60,25.25 59.996,25.247 60,25.243 " />
-                </svg></a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="pricing_ticket wow fadeInUp">
-              <p class="ticket_name" style="font-size: 22px;">
-                Research Scholars
-              </p>
-              <div class="ticket_line">
-              </div>
-              <div class="ticket_price">
-                <span>₹</span>2500
-              </div>
-              <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="60px" height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50" xml:space="preserve">
-                  <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
-  57.875,27.368 57.879,27.372 60,25.25 59.996,25.247 60,25.243 " />
-                </svg></a>
-            </div>
-          </div>
+    <!-- ================================= PRICING TABLE ======================================= -->
 
-          <div class="col-md-3">
-            <div class="pricing_ticket wow fadeInUp">
-              <p class="ticket_name" style="font-size: 22px;">
-                Foreign Participants
-              </p>
-              <div class="ticket_line">
-              </div>
-              <div class="ticket_price">
-                <span>$</span>200
-              </div>
-              <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="60px" height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50" xml:space="preserve">
-                  <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
-  57.875,27.368 57.879,27.372 60,25.25 59.996,25.247 60,25.243 " />
-                </svg></a>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="pricing_ticket wow fadeInUp">
-              <p class="ticket_name" style="font-size: 22px;">
-                Members Of Tensor Society
-              </p>
-              <div class="ticket_line">
-              </div>
-              <div class="ticket_price">
-                <span>₹</span>2500
-              </div>
-              <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="60px" height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50" xml:space="preserve">
-                  <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
-  57.875,27.368 57.879,27.372 60,25.25 59.996,25.247 60,25.243 " />
-                </svg></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-    </div>
-
-    <div class="gap"></div>
-
-    <div id="reservation_menu" class="wow fadeIn">
-      <div class="reservation" style="display: flex;">
+    <div class="pricing_tables">
         <div class="gap">
         </div>
         <div class="first_line">
         </div>
         <div class="first_title">
-          <p>
-            R E G I S T R A T I O N
-          </p>
+            <p>
+                R E G I S T R A T I O N &nbsp; F E E
+            </p>
         </div>
 
-        <div class="first_description">
-          <p>
-            To Register for the conference, Scan the QR Code or Click on the link below
-          </p>
+        <div class="allcontent_bootstrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="pricing_ticket wow fadeInUp">
+                            <p class="ticket_name" style="font-size: 22px;">
+                                Faculty Members
+                            </p>
+                            <div class="ticket_line">
+                            </div>
+                            <div class="ticket_price">
+                                <span>₹</span>3000
+                            </div>
+                            <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1" id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="60px" height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50" xml:space="preserve">
+                  <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
+  57.875,27.368 57.879,27.372 60,25.25 59.996,25.247 60,25.243 " />
+                </svg></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="pricing_ticket wow fadeInUp">
+                            <p class="ticket_name" style="font-size: 22px;">
+                                Research Scholars
+                            </p>
+                            <div class="ticket_line">
+                            </div>
+                            <div class="ticket_price">
+                                <span>₹</span>2500
+                            </div>
+                            <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1" id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="60px" height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50" xml:space="preserve">
+                  <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
+  57.875,27.368 57.879,27.372 60,25.25 59.996,25.247 60,25.243 " />
+                </svg></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="pricing_ticket wow fadeInUp">
+                            <p class="ticket_name" style="font-size: 22px;">
+                                Foreign Participants
+                            </p>
+                            <div class="ticket_line">
+                            </div>
+                            <div class="ticket_price">
+                                <span>$</span>200
+                            </div>
+                            <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1" id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="60px" height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50" xml:space="preserve">
+                  <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
+  57.875,27.368 57.879,27.372 60,25.25 59.996,25.247 60,25.243 " />
+                </svg></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="pricing_ticket wow fadeInUp">
+                            <p class="ticket_name" style="font-size: 22px;">
+                                Members Of Tensor Society
+                            </p>
+                            <div class="ticket_line">
+                            </div>
+                            <div class="ticket_price">
+                                <span>₹</span>2500
+                            </div>
+                            <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1" id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="60px" height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50" xml:space="preserve">
+                  <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
+  57.875,27.368 57.879,27.372 60,25.25 59.996,25.247 60,25.243 " />
+                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
         </div>
 
-      </div>
+        <div class="gap"></div>
+
+        <div id="reservation_menu" class="wow fadeIn">
+            <div class="reservation" style="display: flex;">
+                <div class="gap">
+                </div>
+                <div class="first_line">
+                </div>
+                <div class="first_title">
+                    <p>
+                        R E G I S T R A T I O N
+                    </p>
+                </div>
+
+                <div class="first_description">
+                    <p>
+                        To Register for the conference, Scan the QR Code or Click on the link below
+                    </p>
+                </div>
+
+            </div>
 
 
 
-      <!-- make the a tag and the qr code image come in a same line -->
+            <!-- make the a tag and the qr code image come in a same line -->
 
-      <div class="wow fadeIn reservation" style="display: flex">
-        <a href="https://forms.gle/YWqqnt7usdo9bnFt6" target="_blank">
-          <div class="reservation_button" style="width: 100%; margin-top: 10%;">
-            Click Here To Register
-          </div>
-        </a>
-        <strong style="font-size: 55px; margin: 4% 4%;">OR</strong>
-        <div class="qr_code">
-          <img src="images/qr.png" alt="QR Code" width="210" height="210">
-        </div>
+            <div class="wow fadeIn reservation" style="display: flex">
+                <a href="https://forms.gle/YWqqnt7usdo9bnFt6" target="_blank">
+                    <div class="reservation_button" style="width: 100%; margin-top: 10%;">
+                        Click Here To Register
+                    </div>
+                </a>
+                <strong style="font-size: 55px; margin: 4% 4%;">OR</strong>
+                <div class="qr_code">
+                    <img src="images/qr.png" alt="QR Code" width="210" height="210">
+                </div>
 
-      </div>
+            </div>
 
-      <div class="first_title">
-        <p>
-          <strong>
+            <div class="first_title">
+                <p>
+                    <strong>
             P A Y M E N T
           </strong>
-        </p>
-      </div>
-      <div class="reservation">
-        <br>
-        <br>
-        <br>
-        <br>
-        <center style="align-items: start;">
-          <strong>NEFT/UPI</strong> <br>
-          <strong>In favor of:</strong> GLAU CONFERENCE AND WORKSHOP <br>
-          <strong>A/C No:</strong> 1999 0100 0018 885 <br>
-          <strong>Bank Name:</strong> INDIAN OVERSEAS BANK <br>
-          <strong>Branch:</strong> GLA ENGINEERING COLLEGE, AJHAI, MATHURA <br>
-          <strong>IFSC:</strong> IOBA 0001999 <br>
-        </center>
-      </div>
+                </p>
+            </div>
+            <div class="reservation">
+                <br>
+                <br>
+                <br>
+                <br>
+                <center style="align-items: start;">
+                    <strong>NEFT/UPI</strong> <br>
+                    <strong>In favor of:</strong> GLAU CONFERENCE AND WORKSHOP <br>
+                    <strong>A/C No:</strong> 1999 0100 0018 885 <br>
+                    <strong>Bank Name:</strong> INDIAN OVERSEAS BANK <br>
+                    <strong>Branch:</strong> GLA ENGINEERING COLLEGE, AJHAI, MATHURA <br>
+                    <strong>IFSC:</strong> IOBA 0001999 <br>
+                </center>
+            </div>
+        </div>
+
+    </div>
+    <div class="gap">
     </div>
 
-  </div>
-  <div class="gap">
-  </div>
+    <div class="">
+      <h1>
+       &nbsp;&nbsp; Abstract Submission Link:
+       <a href="https://forms.gle/hYTToYCwmMgDR9Gs9" style="font-size: 70%; font-style: italic; color: rgb(53, 183, 252);" target="_blank">Submit Abstract Here</a>
+      </h1>
+    </div>
 
-  </div>
-  </div>
+    <!-- End Reservation -->
 
-
-  <!-- End Reservation -->
-
-  <div id="contact_menu" class="wow fadeIn">
-    <div class="contact ">
-      <div class="mask">
-        <!-- <div class="first_line">
+    <div id="contact_menu" class="wow fadeIn">
+        <div class="contact ">
+            <div class="mask">
+                <!-- <div class="first_line">
           </div> -->
-        <!-- <div class="first_title">
+                <!-- <div class="first_title">
             <p>
               Contacts
             </p>
           </div> -->
-        <!-- <div class="first_description">
+                <!-- <div class="first_description">
             <p>
               The Design Days Conference will take place at the Main Conference Hall New York, located at 151 East
               Wacker NY 60601. <br>
@@ -1093,21 +1124,20 @@
               which has so much to offer.
             </p>
           </div> -->
-        <div class="mini_gap">
-        </div>
-        <!-- <div id="map">
+                <div class="mini_gap">
+                </div>
+                <!-- <div id="map">
           </div> -->
-        <div class="contact_information">
+                <div class="contact_information">
 
-          <h6 class="wow fadeIn">
-            VENUE </h6>
-          <p class="wow fadeIn">
+                    <h6 class="wow fadeIn">
+                        VENUE </h6>
+                    <p class="wow fadeIn">
 
-            <span class="texticon fa fa-home"></span>Address: TBI Block, AB-11, GLA University, Mathura, Uttar
-            Pradesh, India<br>
-            <!-- <span class="texticon fa fa-street-view"></span>GPS coordinates: 438.135696,317.114645 -->
-          </p>
-          <!-- <h6 class="wow fadeIn">
+                        <span class="texticon fa fa-home"></span>Address: TBI Block, AB-11, GLA University, Mathura, Uttar Pradesh, India<br>
+                        <!-- <span class="texticon fa fa-street-view"></span>GPS coordinates: 438.135696,317.114645 -->
+                    </p>
+                    <!-- <h6 class="wow fadeIn">
               NEARBY ACCOMODATION </h6>
             <p class="wow fadeIn">
               Are you looking for a place to stay? <br>
@@ -1117,39 +1147,41 @@
               of town and the city landmarks. Thanks to the convenient central location, you will be able to experience
               the city's most charismatic areas firsthand.
             </p> -->
-        </div>
-        <div class="contact_information">
-          <!-- <h6 class="wow fadeIn">
+                </div>
+                <div class="contact_information">
+                    <!-- <h6 class="wow fadeIn">
               Food & Drink </h6>
             <p class="wow fadeIn">
               We prepared for you the best tips on nice places to eat & drink at NY Main Hall. Everything can be reached
               on foot in a few minutes.
             </p> -->
-          <h6 class="wow fadeIn">
-            Contacts </h6>
-          <b class="wow fadeIn">ICGAC, GLA University</b>
-          <p class="wow fadeIn">
-            <span class="texticon fa fa-comment"></span>Feel free to reach out to us!
-            <br>
-            <span class="texticon fa fa-envelope"></span>icgac24@gla.ac.in
-            <br>
-            <!-- <span class="texticon fa fa-phone"></span>  -->
-          </p>
+                    <h6 class="wow fadeIn">
+                        Contacts </h6>
+                    <b class="wow fadeIn">ICGAC, GLA University</b>
+                    <p class="wow fadeIn">
+                        <span class="texticon fa fa-comment"></span>Feel free to reach out to us!
+                        <br>
+                        <span class="texticon fa fa-envelope"></span>icgac24@gla.ac.in
+                        <br>
+                        <!-- <span class="texticon fa fa-phone"></span>  -->
+                    </p>
 
-          <a href="#" class="contact_icon fa fa-facebook wow fadeInUp">
-          </a>
-          <a href="#" class="contact_icon fa fa-twitter wow fadeInUp">
-          </a>
-          <a href="https://www.gla.ac.in/" target="_blank" class="contact_icon fa fa-graduation-cap wow fadeInUp">
-          </a>
-          <!-- <a href="#" class="contact_icon fa fa-google-plus wow fadeInUp">
+                    <a href="#" class="contact_icon fa fa-facebook wow fadeInUp">
+                    </a>
+                    <a href="#" class="contact_icon fa fa-twitter wow fadeInUp">
+                    </a>
+                    <a href="https://www.gla.ac.in/" target="_blank" class="contact_icon fa fa-graduation-cap wow fadeInUp">
+                    </a>
+                    <!-- <a href="#" class="contact_icon fa fa-google-plus wow fadeInUp">
             </a>
             <a href="#" class="contact_icon fa fa-pinterest-p wow fadeInUp">
             </a>
             <a href="#" class="contact_icon fa fa-sellsy wow fadeInUp">
             </a> -->
-        </div>
-        <!-- <form class="eventime_contact_form" action="#">
+                </div>
+
+                
+                <!-- <form class="eventime_contact_form" action="#">
             <input type="hidden">
             <input name="first_name" class="" type="text" placeholder="First Name">
             <input name="last_name" class="rightinput" type="text" placeholder="Last Name">
@@ -1162,154 +1194,228 @@
             <div id="contactMsgc">
             </div>
           </form> -->
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 
 
 
-  <div class="footer_second">
+    <div class="footer_second">
 
-    <div class="footer_second_left">
-      <p class="copyright">Designed and Developed By
-        <a href="https://www.linkedin.com/in/divyanshu-khandelwal-dkoder/" target="_blank"
-          style="font-weight: bold; font-family: cursive;">
+        <div class="footer_second_left">
+            <p class="copyright">Designed and Developed By
+                <a href="https://www.linkedin.com/in/divyanshu-khandelwal-dkoder/" target="_blank" style="font-weight: bold; font-family: cursive;">
           Divyanshu Khandelwal
         </a>
-      </p>
+            </p>
 
+        </div>
     </div>
-  </div>
 
-  <!-- Scripts -->
-  <script type="text/javascript" src="js/jquery-2.2.1.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa2DO1ai4wjFpu3MMT6upNhpHfrsF9hOc"></script>
-  <!--Attetion! You need to replace follow Google MAP APi-->
-  <script type="text/javascript" src="js/minify.js"></script>
-  <script>
-    (function () {
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jquery-2.2.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa2DO1ai4wjFpu3MMT6upNhpHfrsF9hOc"></script>
+    <!--Attetion! You need to replace follow Google MAP APi-->
+    <script type="text/javascript" src="js/minify.js"></script>
+    <script>
+        (function() {
 
-      var a = document.querySelectorAll("."),
-        speed = 0.2;
+            var a = document.querySelectorAll("."),
+                speed = 0.2;
 
-      window.onscroll = function () {
-        [].slice.call().forEach(function (el, i) {
+            window.onscroll = function() {
+                [].slice.call().forEach(function(el, i) {
 
-          var windowYOffset = window.pageYOffset,
-            elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
+                    var windowYOffset = window.pageYOffset,
+                        elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
 
-          el.style.backgroundPosition = elBackgrounPos;
+                    el.style.backgroundPosition = elBackgrounPos;
 
-        });
-      };
+                });
+            };
 
-    })();
-  </script>
-  <script type="text/javascript">
-    //<![CDATA[
+        })();
+    </script>
+    <script type="text/javascript">
+        //<![CDATA[
 
-    // Google Map
-    google.maps.event.addDomListener(window, 'load', init);
-    function init() {
-      // Basic options for a simple Google Map
-      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-      var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: 15,
-        scrollwheel: false,
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9450), // New York
-        // How you would like to style the map.
-        // This is where you would paste any style found on Snazzy Maps.
-        styles: [{ "featureType": "landscape", "stylers": [{ "saturation": -100 }, { "lightness": 65 }, { "visibility": "on" }] }, { "featureType": "poi", "stylers": [{ "saturation": -100 }, { "lightness": 51 }, { "visibility": "simplified" }] }, { "featureType": "road.highway", "stylers": [{ "saturation": -100 }, { "visibility": "simplified" }] }, { "featureType": "road.arterial", "stylers": [{ "saturation": -100 }, { "lightness": 30 }, { "visibility": "on" }] }, { "featureType": "road.local", "stylers": [{ "saturation": -100 }, { "lightness": 40 }, { "visibility": "on" }] }, { "featureType": "transit", "stylers": [{ "saturation": -100 }, { "visibility": "simplified" }] }, { "featureType": "administrative.province", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "labels", "stylers": [{ "visibility": "on" }, { "lightness": -25 }, { "saturation": -100 }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "hue": "#ffff00" }, { "lightness": -25 }, { "saturation": -97 }] }]
-      };
-      // Get the HTML DOM element that will contain your map
-      var mapElement = document.getElementById('map');
-      // Create the Google Map using our element and options defined above
-      var map = new google.maps.Map(mapElement, mapOptions);
-      // Let's also add a marker while we're at it
+        // Google Map
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 15,
+                scrollwheel: false,
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(40.6700, -73.9450), // New York
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [{
+                    "featureType": "landscape",
+                    "stylers": [{
+                        "saturation": -100
+                    }, {
+                        "lightness": 65
+                    }, {
+                        "visibility": "on"
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "stylers": [{
+                        "saturation": -100
+                    }, {
+                        "lightness": 51
+                    }, {
+                        "visibility": "simplified"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "stylers": [{
+                        "saturation": -100
+                    }, {
+                        "visibility": "simplified"
+                    }]
+                }, {
+                    "featureType": "road.arterial",
+                    "stylers": [{
+                        "saturation": -100
+                    }, {
+                        "lightness": 30
+                    }, {
+                        "visibility": "on"
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "stylers": [{
+                        "saturation": -100
+                    }, {
+                        "lightness": 40
+                    }, {
+                        "visibility": "on"
+                    }]
+                }, {
+                    "featureType": "transit",
+                    "stylers": [{
+                        "saturation": -100
+                    }, {
+                        "visibility": "simplified"
+                    }]
+                }, {
+                    "featureType": "administrative.province",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "labels",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "lightness": -25
+                    }, {
+                        "saturation": -100
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "hue": "#ffff00"
+                    }, {
+                        "lightness": -25
+                    }, {
+                        "saturation": -97
+                    }]
+                }]
+            };
+            // Get the HTML DOM element that will contain your map
+            var mapElement = document.getElementById('map');
+            // Create the Google Map using our element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+            // Let's also add a marker while we're at it
 
 
 
 
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.6650, -73.9510),
-        icon: 'images/pin_star.svg',
-        map: map,
-        animation: google.maps.Animation.DROP,
-        title: 'Registration!'
-      });
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(40.6650, -73.9510),
+                icon: 'images/pin_star.svg',
+                map: map,
+                animation: google.maps.Animation.DROP,
+                title: 'Registration!'
+            });
 
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.6700, -73.9590),
-        icon: 'images/pin_food.svg',
-        map: map,
-        animation: google.maps.Animation.DROP,
-        title: 'Coffee!'
-      });
-
-
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.670030, -73.9490),
-        icon: 'images/pin_accommodation.svg',
-        map: map,
-        animation: google.maps.Animation.DROP,
-        title: 'Accommodation!'
-      });
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(40.6700, -73.9590),
+                icon: 'images/pin_food.svg',
+                map: map,
+                animation: google.maps.Animation.DROP,
+                title: 'Coffee!'
+            });
 
 
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.6700, -73.9500),
-        icon: 'images/pin_accommodation.svg',
-        map: map,
-        animation: google.maps.Animation.DROP,
-        title: 'Accommodation!'
-      });
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(40.670030, -73.9490),
+                icon: 'images/pin_accommodation.svg',
+                map: map,
+                animation: google.maps.Animation.DROP,
+                title: 'Accommodation!'
+            });
 
 
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.674, -73.9520),
-        icon: 'images/pin_accommodation.svg',
-        map: map,
-        animation: google.maps.Animation.DROP,
-        title: 'Accommodation!'
-      });
-
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.670, -73.9420),
-        icon: 'images/pin_speaker.svg',
-        map: map,
-        animation: google.maps.Animation.DROP,
-        title: 'Speakers here!'
-      });
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.665, -73.9450),
-        icon: 'images/pin_speaker.svg',
-        map: map,
-        animation: google.maps.Animation.DROP,
-        title: 'Speakers here!'
-      });
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.6658, -73.9400),
-        icon: 'images/pin_speaker.svg',
-        map: map,
-        animation: google.maps.Animation.DROP,
-        title: 'Speakers here!'
-      });
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(40.6700, -73.9500),
+                icon: 'images/pin_accommodation.svg',
+                map: map,
+                animation: google.maps.Animation.DROP,
+                title: 'Accommodation!'
+            });
 
 
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.6666, -73.9300),
-        icon: 'images/pin_speaker.svg',
-        map: map,
-        animation: google.maps.Animation.DROP,
-        title: 'Speakers here!'
-      });
-    }
-    //]]>
-  </script>
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(40.674, -73.9520),
+                icon: 'images/pin_accommodation.svg',
+                map: map,
+                animation: google.maps.Animation.DROP,
+                title: 'Accommodation!'
+            });
+
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(40.670, -73.9420),
+                icon: 'images/pin_speaker.svg',
+                map: map,
+                animation: google.maps.Animation.DROP,
+                title: 'Speakers here!'
+            });
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(40.665, -73.9450),
+                icon: 'images/pin_speaker.svg',
+                map: map,
+                animation: google.maps.Animation.DROP,
+                title: 'Speakers here!'
+            });
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(40.6658, -73.9400),
+                icon: 'images/pin_speaker.svg',
+                map: map,
+                animation: google.maps.Animation.DROP,
+                title: 'Speakers here!'
+            });
+
+
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(40.6666, -73.9300),
+                icon: 'images/pin_speaker.svg',
+                map: map,
+                animation: google.maps.Animation.DROP,
+                title: 'Speakers here!'
+            });
+        }
+        //]]>
+    </script>
 </body>
 
 <!-- Mirrored from eventime.tchaikovsky.design/eventime_demo/one_page_with_animation.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Feb 2024 17:21:33 GMT -->
