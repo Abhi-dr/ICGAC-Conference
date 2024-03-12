@@ -35,39 +35,67 @@
             font-size: 16px;
             border: none;
         }
+
         /* The container <div> - needed to position the dropdown content */
-        
+
         .dropdown {
             position: relative;
             display: inline-block;
         }
+
         /* Dropdown Content (Hidden by Default) */
-        
+
         .dropdown-content {
             display: none;
             position: absolute;
             background-color: #f1f1f1;
             z-index: 1;
         }
+
         /* Links inside the dropdown */
-        
+
         .dropdown-content a {
             color: black;
         }
+
         /* Change color of dropdown links on hover */
-        
+
         .dropdown-content a:hover {
             background-color: #ddd;
         }
+
         /* Show the dropdown menu on hover */
-        
+
         .dropdown:hover .dropdown-content {
             display: block;
         }
+
         /* Change the background color of the dropdown button when the dropdown content is shown */
-        
+
         .dropdown:hover .dropbtn {
             background-color: #3e8e41;
+        }
+    </style>
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 3%;
+        }
+
+        ​ td,
+        th {
+            border: 1px solid #7d7d7d;
+            text-align: left;
+            padding: 8px;
+        }
+
+        ​ tr:nth-child(even) {
+            background-color: #6c6c6c;
         }
     </style>
 </head>
@@ -83,36 +111,37 @@
     <nav class="navbar navbar-fixed-top nav_mask">
         <div class="navi_container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">
-            Toggle navigation </span>
-          <span class="icon-bar">
-          </span>
-          <span class="icon-bar">
-          </span>
-          <span class="icon-bar">
-          </span>
-        </button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">
+                        Toggle navigation </span>
+                    <span class="icon-bar">
+                    </span>
+                    <span class="icon-bar">
+                    </span>
+                    <span class="icon-bar">
+                    </span>
+                </button>
                 <a class="navbar-brand" href="#home_slider">
-          ICGAC </a>
+                    ICGAC </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="#about_menu">
-              About </a>
+                            About </a>
                     </li>
                     <li>
-                        <a href="#schedule_menu">
-              Schedule </a>
+                        <a href="#important_dates">
+                            Important Dates </a>
                     </li>
                     <li>
                         <a href="#reservation_menu">
-              REGISTRATION </a>
+                            REGISTRATION </a>
                     </li>
                     <li>
                         <a href="#ourSpeakers">
-              Speakers </a>
+                            Speakers </a>
                     </li>
                     <!-- <li>
             <a href="#reservation_menu">
@@ -124,17 +153,21 @@
           </li>x -->
                     <li>
                         <a href="#contact_menu">
-              Contact </a>
+                            Contact </a>
                     </li>
 
                     <li>
                         <div class="dropdown">
                             <button class="dropbtn">Submission</button>
                             <div class="dropdown-content">
-                                <a class="btn eventime_button" style="width: 100%; margin:auto; border: 1.5px solid green; font-size: 99%;" href="data\ICGAC Flyer-3.pdf" download role="button">
-                  Broschure </a>
-                                <a class="btn eventime_button" style="width: 100%; margin:auto; border: 1.5px solid green; font-size: 99%;" href="data\ICGAC Abstract Format.pdf" download role="button">
-                    Abstract Format </a>
+                                <a class="btn eventime_button"
+                                    style="width: 100%; margin:auto; border: 1.5px solid green; font-size: 99%;"
+                                    href="data\ICGAC Flyer-3.pdf" download role="button">
+                                    Brochure </a>
+                                <a class="btn eventime_button"
+                                    style="width: 100%; margin:auto; border: 1.5px solid green; font-size: 99%;"
+                                    href="data\ICGAC Abstract Format.pdf" download role="button">
+                                    Abstract Format </a>
                             </div>
                         </div>
                     </li>
@@ -160,8 +193,8 @@
                 </div>
                 <div class="fill_mask">
                     <div class="description ">
-                        <h3 class="details wow fadeInDown" style="font-weight: bold;">
-                            International Conference on Gravitation, Cosmology and Astrophysics </h3>
+                        <h3 class="details wow fadeInDown" style="font-weight: bold; letter-spacing: 0;">
+                            International Conference on Gravitation, Astrophysics and Cosmology</h3>
                         <div class="details wow fadeInUp">
                             <div class="fa fa-map-marker fa-2x">
                             </div>
@@ -178,9 +211,9 @@
                         </div>
                         <div class="buttons ">
                             <a class="wow fadeInLeft btn eventime_button" href="#about_menu" role="button">
-                About Event </a>
+                                About Event </a>
                             <a class="wow fadeInRight btn eventime_button" href="#reservation_menu" role="button">
-                REGISTRATION </a>
+                                REGISTRATION </a>
                         </div>
                     </div>
                 </div>
@@ -191,11 +224,12 @@
                 </div>
                 <div class="fill_mask">
                     <div class="description ">
-                        <h2 class="wow fadeInUp">
-                            International Conference on Gravitation, Cosmology and Astrophysics</h2>
+                        <h2 class="wow fadeInUp" style="letter-spacing: 0;">
+                            International Conference on Gravitation, Astrophysics and Cosmology
+                        </h2>
                         <div class="buttons">
                             <a class="wow fadeInUp btn eventime_button" href="#speakers_menu" role="button">
-                Speakers </a>
+                                Speakers </a>
                         </div>
                     </div>
                 </div>
@@ -206,8 +240,9 @@
                 </div>
                 <div class="fill_mask">
                     <div class="description ">
-                        <h2 class="wow fadeInUp" style="font-weight: bold;">
-                            International Conference on Gravitation, Cosmology and Astrophysics </h2>
+                        <h2 class="wow fadeInUp" style="font-weight: bold; letter-spacing: 0;">
+                            International Conference on Gravitation, Astrophysics and Cosmology
+                        </h2>
                         <div class="details wow fadeInDown">
                             <div class="fa fa-clock-o fa-2x">
                             </div>
@@ -217,7 +252,7 @@
                         </div>
                         <div class="buttons">
                             <a class="wow fadeInUp btn eventime_button" href="#schedule_menu" role="button">
-                Schedule</a>
+                                Schedule</a>
                         </div>
                     </div>
                 </div>
@@ -225,13 +260,13 @@
         </div>
         <a class="wow fadeInLeft left_arrow" href="#home_slider" data-slide="prev">
             <svg width="26px" height="48">
-        <polygon points="3.3,24.5 25.5,2.3 24,0.8 0.3,24.5 24,48.2 25.5,46.7" />
-      </svg>
+                <polygon points="3.3,24.5 25.5,2.3 24,0.8 0.3,24.5 24,48.2 25.5,46.7" />
+            </svg>
         </a>
         <a class="wow fadeInRight right_arrow" href="#home_slider" data-slide="next">
             <svg width="26px" height="48">
-        <polygon points="22.5,24.5 0.3,2.3 1.8,0.8 25.5,24.5 1.8,48.2 0.3,46.7" />
-      </svg>
+                <polygon points="22.5,24.5 0.3,2.3 1.8,0.8 25.5,24.5 1.8,48.2 0.3,46.7" />
+            </svg>
         </a>
     </header>
     <div class="clear">
@@ -249,11 +284,22 @@
                 </div>
                 <div class="first_description wow fadeInDown">
                     <p style="text-align: justify;">
-                        GLA University is a NAAC A+ accredited University. It started in 1998 as the GLA Institute of Technology and Management. It went on to take the shape of the GLA Group of Institutions and finally became GLA University in the year 2010. The university is
-                        spread over 114 acres of lush green campus. The University has more than 21000 students in its various courses at the diploma, undergraduate, postgraduate, and doctor levels in the disciplines of Science, Technology, Management,
-                        and Pharmacy. More than 650 experienced faculty members and over 2000 staff members are devoted to the growth of the University.
+                        GLA University is a NAAC A+ accredited University. It started in 1998 as the GLA Institute of
+                        Technology and Management. It went on to take the shape of the GLA Group of Institutions and
+                        finally became GLA University in the year 2010. The university is
+                        spread over 114 acres of lush green campus. The University has more than 21000 students in its
+                        various courses at the diploma, undergraduate, postgraduate, and doctor levels in the
+                        disciplines of Science, Technology, Management,
+                        and Pharmacy. More than 650 experienced faculty members and over 2000 staff members are devoted
+                        to the growth of the University.
                     </p>
+                    Fore more information, visit the official website of GLA University at:
+
+                    <a href="https://www.gla.ac.in/" target="_blank" style="color: rgb(110, 166, 166);">
+                        www.gla.ac.in
+                    </a>
                 </div>
+
             </div>
             <div class="wow fadeIn first_image">
             </div>
@@ -274,29 +320,29 @@
                 </div>
                 <div class="first_description wow fadeInDown">
                     <p style="text-align: justify;">
-                        International Conference on Gravitation, Astrophysics, and Cosmology aims to bring together leading academicians, scientists, researchers, and scholars to share and exchange their experiences, research findings, and results. It provides a premier platform
-                        for researchers to share, discuss, and present their research results on the most recent innovations, trends, and concerns, and practical challenges in all aspects of Gravitation, Astrophysics, and Cosmology. The scope of the conference
+                        International Conference on Gravitation, Astrophysics, and Cosmology aims to bring together
+                        leading academicians, scientists, researchers, and scholars to share and exchange their
+                        experiences, research findings, and results. It provides a premier platform
+                        for researchers to share, discuss, and present their research results on the most recent
+                        innovations, trends, and concerns, and practical challenges in all aspects of Gravitation,
+                        Astrophysics, and Cosmology. The scope of the conference
                         extends to the following:
-                        <ul>
-                            <li> General Relativity
-                            </li>
-                            <li> Cosmology
-                            </li>
-                            <li> Astrophysics & Astronomy
-                            </li>
-                            <li> Theoretical Physics
-                            </li>
-                            <li>Black Holes</li>
-                            <li>Modified Gravity</li>
-                            <li>Differential Geometry</li>
-                            <li>Relativistic and Non-Relativistic Fluids</li>
+                    <ul>
+                        <li> General Relativity
+                        </li>
+                        <li> Cosmology
+                        </li>
+                        <li> Astrophysics & Astronomy
+                        </li>
+                        <li> Theoretical Physics
+                        </li>
+                        <li>Black Holes</li>
+                        <li>Modified Gravity</li>
+                        <li>Differential Geometry</li>
+                        <li>Relativistic and Non-Relativistic Fluids</li>
 
-                        </ul>
-                        <!-- More information about the society is available on it’s website:
+                    </ul>
 
-          <a href="https://tensorsociety.com/" target="_blank" style="color: rgb(110, 166, 166);">
-            www.tensorsociety.com
-          </a> -->
                     </p>
                 </div>
             </div>
@@ -310,8 +356,56 @@
         <div class="clear">
         </div>
 
-        <!-- ======================================== MAIN LOG =============================================== -->
+<!-- =================================== IMPORTANT DATES ===================================== -->
 
+<div class="pricing_tables" id="important_dates">
+    <div class="gap">
+    </div>
+    <div class="first_line">
+    </div>
+    <div class="first_title">
+        <p style="font-weight: bold; color: rgb(234, 102, 102);">
+            I M P O R T A N T &nbsp; D A T E S
+        </p>
+    </div>
+
+
+    <table>
+        <tr>
+            <th style="font-size: 20px;">E V E N T</th>
+            <th style="font-size: 20px;">D E A D L I N E</th>
+        </tr>
+        <tr>
+            <th>REGISTRATION</th>
+            <th>31st May, 2024</th>
+        </tr>
+
+        <tr>
+            <th>ABSTRACT SUBMISSION</th>
+            <th>20th May, 2024</th>
+        </tr>
+
+        <tr>
+            <th>ABSTRACT ACCEPTANCE</th>
+            <th>Within One Week of Abstract Submission</th>
+        </tr>
+
+        <tr>
+            <th>FULL PAPER</th>
+            <th>31st May, 2024</th>
+        </tr>
+        <tr>
+            <th>FINAL ACCEPTANCE</th>
+            <th>5th June, 2024</th>
+        </tr>
+
+    </table>
+</div>
+
+
+
+
+        <!-- ======================================== MAIN LOG =============================================== -->
 
 
         <div id="speakers_menu">
@@ -328,8 +422,10 @@
                                     <li class="list">
 
                                         <ul>
-                                            <li><strong>> Shri Narayan Das Agrawal </strong><br> Chancellor, GLA University, Mathura, India</li>
-                                            <li><strong>> Prof. Durg Singh Chauhan </strong> <br> Pro-Chancellor, GLA University, Mathura, Indian</li>
+                                            <li><strong>> Shri Narayan Das Agrawal </strong><br> Chancellor, GLA
+                                                University, Mathura, India</li>
+                                            <li><strong>> Prof. Durg Singh Chauhan </strong> <br> Pro-Chancellor, GLA
+                                                University, Mathura, Indian</li>
                                             <br>
                                         </ul>
                                     </li>
@@ -346,8 +442,10 @@
                                     <li class="list">
 
                                         <ul>
-                                            <li><strong>> Prof. Phalguni Gupta</strong><br>Vice-Chancellor, GLA University, Mathura, India</li>
-                                            <li><strong>> Prof. Anup Kumar Gupta</strong><br>ProVice-Chancellor, GLA University, Mathura, India</li>
+                                            <li><strong>> Prof. Phalguni Gupta</strong><br>Vice-Chancellor, GLA
+                                                University, Mathura, India</li>
+                                            <li><strong>> Prof. Anup Kumar Gupta</strong><br>ProVice-Chancellor, GLA
+                                                University, Mathura, India</li>
                                             <br>
                                         </ul>
                                     </li>
@@ -365,7 +463,8 @@
                                     <li class="list">
 
                                         <ul>
-                                            <li><strong>> Prof. Anirudh Pradhan</strong> <br>Distinguished Professor & Director, CCASS, GLA University, Mathura, India</li>
+                                            <li><strong>> Prof. Anirudh Pradhan</strong> <br>Distinguished Professor &
+                                                Director, CCASS, GLA University, Mathura, India</li>
                                             <br>
                                         </ul>
                                     </li>
@@ -384,7 +483,8 @@
                                     <li class="list">
 
                                         <ul>
-                                            <li><strong>> Prof.Saibal Ray </strong> <br>Professor & Associate Director, CCASS, GLA University, Mathura, India Mob. No: +91-9163169796</li>
+                                            <li><strong>> Prof.Saibal Ray </strong> <br>Professor & Associate Director,
+                                                CCASS, GLA University, Mathura, India Mob. No: +91-9163169796</li>
                                             <br>
                                         </ul>
                                     </li>
@@ -402,9 +502,11 @@
                                     <li class="list">
 
                                         <ul>
-                                            <li><strong>> Dr. Dinesh Chandra Maurya</strong> <br>CCASS, GLA University, Mathura, India <br> Mob. +91-8810764934</li>
+                                            <li><strong>> Dr. Dinesh Chandra Maurya</strong> <br>CCASS, GLA University,
+                                                Mathura, India <br> Mob. +91-8810764934</li>
                                             <br>
-                                            <li><strong>> Dr. Ashutosh Singh</strong><br>CCASS, GLA University, Mathura, India <br> Mob. +91-9628324945 </li>
+                                            <li><strong>> Dr. Ashutosh Singh</strong><br>CCASS, GLA University, Mathura,
+                                                India <br> Mob. +91-9628324945 </li>
                                             <br>
                                         </ul>
                                     </li>
@@ -482,6 +584,7 @@
                                 <ul>
                                     <li><strong>> Shri A.K. Singh</strong> (Registrar, GLA University, Mathura)</li>
                                     <li><strong>> Prof. A. Bhattacharya</strong> (Jadavpur Univ., Kolkata)</li>
+                                    <li><strong>> Prof. Anuj Vijay</strong> (HOD, Physics, GLAU, Mathura)</li>
                                     <li><strong>> Prof. A.K. Yadav</strong> (UCER, Greater Noida)</li>
                                     <li><strong>> Prof. A.H. Hasmani</strong> (SPU, Gujarat)</li>
                                     <li><strong>> Prof. B. Mishra</strong> (BITS Hyderabad)</li>
@@ -494,18 +597,26 @@
                                     <li><strong>> Prof. G.S. Khadekar</strong> (R.T.M. Nagpur University, Nagpur)</li>
                                     <li><strong>> Prof. J.K. Singh</strong> (NSUT, New Delhi)</li>
                                     <li><strong>> Prof. J. Upreti</strong> (KU, Almora)</li>
-                                    <li><strong>> Prof. K Adhav</strong> (Indira Gandhi National Tribal University, Amarkantak)</li>
+                                    <li><strong>> Prof. K Adhav</strong> (Indira Gandhi National Tribal University,
+                                        Amarkantak)</li>
+                                    <li><strong>> Prof. Manish Goyal</strong> (HOD, Mathematics, GLAU, Mathura)</li>
                                     <li><strong>> Prof. M. Majumdar</strong> (UC, Kolkata)</li>
                                     <li><strong>> Prof. M.M. Tripathi</strong> (BHU, Varanasi)</li>
                                     <li><strong>> Prof. P.K. Sahoo</strong> (BITS Hyderabad)</li>
                                     <li><strong>> Prof. R. Chaubey</strong> (BHU, Varanasi)</li>
                                     <li><strong>> Prof. R. Kumar</strong> (PU, Patiala)</li>
                                     <li><strong>> Prof. S. Ali</strong> (SRMCEM, Lucknow)</li>
-                                    <li><strong>> Prof. S.G. Ghosh</strong> (CTP-Jamia Millia Islamiais is, New Delhi)</li>
-                                    <li><strong>> Prof. S.K. Narsimhamurthy</strong> (Kuvempu University)</li>
+                                    <li><strong>> Prof. S.G. Ghosh</strong> (CTP-Jamia Millia Islamiais is, New Delhi)
+                                    </li>
+                                    <li><strong>> Prof. S.K. Narsimhamurthy</strong> (Vice President, The Tensor
+                                        Society, India)</li>
+                                    <li><strong>> Prof. S.K. Srivastava</strong> (Secretary, The Tensor Society, India)
+                                    </li>
                                     <li><strong>> Prof. S.K. Tripathy</strong> (IGIT, Sarang)</li>
+                                    <li><strong>> Shri Prakash Chandra</strong> (Treasurer, The Tensor Society, India)
+                                    </li>
                                     <li><strong>> Prof. V.N. Pathak</strong> (SRMU, Lucknow)</li>
-                                    <li><strong>> Prof. Z. Ashan</strong> (AMU, Aligarh)</li>
+                                    <li><strong>> Prof. Zafar Ashan</strong> (President, The Tensor Society, India)</li>
                                     <br>
                                 </ul>
 
@@ -515,12 +626,14 @@
                                 <ul>
                                     <li><strong>> Prof. A. DeBenedictis</strong> (Simon Fraser University, Canada)</li>
                                     <li><strong>> Prof. A. Beesham</strong> (MUT, South Africa)</li>
-                                    <li><strong>> Prof. I. Radinschi</strong> (Gheorghe Asachi Technical University, Romania)</li>
+                                    <li><strong>> Prof. I. Radinschi</strong> (Gheorghe Asachi Technical University,
+                                        Romania)</li>
                                     <li><strong>> Prof. J. Ovalle</strong> (Silesian University, Opava)</li>
                                     <li><strong>> Prof. K. Bamba</strong> (Nagoya University, Japan)</li>
                                     <li><strong>> Prof. L. Herrera</strong> (Uni.de Salamanca, Spain)</li>
                                     <li><strong>> Prof. M. Khlopov</strong> (Universit´e Paris Cit´e, France)</li>
-                                    <li><strong>> Prof. S. Capozziello</strong> (Università “Federico II” di Napoli, Italy)</li>
+                                    <li><strong>> Prof. S. Capozziello</strong> (Università “Federico II” di Napoli,
+                                        Italy)</li>
                                     <li><strong>> Prof. S.D. Odintsov</strong> (ICREA, Barcelona, Spain)</li>
                                     <li><strong>> Prof. S. Krishnannair</strong> (UniZulu, South Africa)</li>
                                     <li><strong>> Prof. S.V. Ketov</strong> (Tokyo Metropolitan University, Japan)</li>
@@ -538,313 +651,11 @@
 
     </div>
     <!-- End About -->
-    <div id="schedule_menu">
-        <div class="gap">
-        </div>
-        <div class="first_line wow fadeInDown">
-        </div>
-        <div class="first_title">
-            <p class=" wow fadeInDown">
-                SCHEDULE
-            </p>
-        </div>
-        <div class="first_description">
-            <p class=" wow fadeInDown">
-                <b>14th-16th of June, 2024 | TBI Block, GLA University, Mathura</b><br>
-            </p>
-        </div>
-        <div class="mini_gap">
-        </div>
-        <div id="sh_carousel" class="carousel slide">
-            <!-- Carousel indicators -->
-            <div class="carousel-indicators">
-                <div class=" wow fadeInUp active btn eventime_button graybtn graytxt" data-target="#sh_carousel" data-slide-to="0">
-                    Opening day
-                </div>
-                <div class=" wow fadeInDown btn eventime_button graybtn graytxt" data-target="#sh_carousel" data-slide-to="1">
-                    Second Day
-                </div>
-                <div class=" wow fadeInUp btn eventime_button graybtn graytxt" data-target="#sh_carousel" data-slide-to="2">
-                    Third Day
-                </div>
-            </div>
-            <!-- Carousel items -->
-            <div class="carousel-inner">
 
-                <!-- =========== Day 1 Schedule =========== -->
+    <!-- 
+    ============================================== SCHEDULE WILL BE HERE =============================
+ -->
 
-                <div class="active item">
-                    <!-- DAY ONE -->
-                    <div class="schedule_date wow fadeInLeft">
-                        14
-                    </div>
-                    <div class="schedule_month wow fadeInRight">
-                        June
-                    </div>
-                    <!-- Accordion item -->
-                    <div class="mini_gap">
-                    </div>
-                    <div id="accordion1">
-                        <div class="panel wow fadeInDown">
-                            <a data-toggle="collapse" data-parent="#accordion1" href="#one_one">
-                                <div class="accordion_left">
-                                    <div class="accordions_titles_small">
-                                        <p class="accordion_date">
-                                            9:00-9:30 a.m.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="accordion_right">
-                                    <div class="accordions_titles_small">
-                                        <div class="accordion_description">
-                                            <p>
-                                                Registration
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Accordion item -->
-                        <div class="mini_gap">
-                        </div>
-                        <div class="panel wow fadeInDown">
-                            <a data-toggle="collapse" data-parent="#accordion1" href="#one_two">
-                                <div class="accordion_left">
-                                    <div class="accordions_titles">
-                                        <p class="accordion_date">
-                                            9:30-11:30 a.m.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="accordion_right">
-                                    <div class="accordions_titles">
-                                        <div class="accordion_description">
-                                            <p>
-                                                Inaugural Event
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Accordion item -->
-                        <div class="mini_gap">
-                        </div>
-                        <div class="panel wow fadeInDown">
-                            <a data-toggle="collapse" data-parent="#accordion1" href="#one_three">
-                                <div class="accordion_left">
-                                    <div class="accordions_titles_big">
-                                        <p class="accordion_date">
-                                            11:30 - 2:00 p.m.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="accordion_right">
-                                    <div class="accordions_titles_big">
-                                        <div class="accordion_description">
-                                            <p>
-                                                Key Note / Plenary Talks
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Accordion item -->
-                        <div class="mini_gap">
-                        </div>
-
-                        <div class="mini_gap">
-                        </div>
-                        <a href="#reservation_menu" class="schedule_reservation wow btn eventime_button  fadeInRight">
-              Make Registration
-            </a>
-                        <!-- End of the accordion -->
-                    </div>
-                    <!-- End of the day -->
-                </div>
-
-                <!-- =========== Day 2 Schedule =========== -->
-
-                <div class="item">
-                    <!-- DAY TWO -->
-                    <div class="schedule_date wow fadeInLeft">
-                        15
-                    </div>
-                    <div class="schedule_month wow fadeInRight">
-                        June
-                    </div>
-                    <!-- Accordion item -->
-                    <div id="accordion2">
-                        <div class="mini_gap">
-                        </div>
-                        <div class="wow fadeInDown panel">
-                            <a data-toggle="collapse" data-parent="#accordion2" href="#two_one">
-                                <div class="accordion_left">
-                                    <div class="accordions_titles">
-                                        <p class="accordion_date">
-                                            9:30-11:30 a.m.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="accordion_right">
-                                    <div class="accordions_titles">
-                                        <div class="accordion_description">
-                                            <p>
-                                                Technical Session
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Accordion item -->
-
-                        <div class="panel wow fadeInDown">
-                            <a data-toggle="collapse" data-parent="#accordion1" href="#one_three">
-                                <div class="accordion_left">
-                                    <div class="accordions_titles_big">
-                                        <p class="accordion_date">
-                                            11:30 - 2:00 p.m.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="accordion_right">
-                                    <div class="accordions_titles_big">
-                                        <div class="accordion_description">
-                                            <p>
-                                                Plenary / Invited Talks
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Accordion item -->
-                        <div class="mini_gap">
-                        </div>
-
-                        <div class="mini_gap">
-                        </div>
-                        <div class="panel wow fadeInDown">
-                            <a data-toggle="collapse" data-parent="#accordion2" href="#two_four">
-                                <div class="accordion_left">
-                                    <div class="accordions_titles">
-                                        <p class="accordion_date">
-                                            3:00 - 5:00 p.m.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="accordion_right">
-                                    <div class="accordions_titles">
-                                        <div class="accordion_description">
-                                            <p>
-                                                Technical Session
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="mini_gap">
-                        </div>
-                        <a href="#reservation_menu" class="schedule_reservation wow btn eventime_button  fadeInRight">
-              Make Registration
-            </a>
-                        <!-- End of the accordion -->
-                    </div>
-                    <!-- End of the day -->
-                </div>
-
-                <!-- =========== Day 3 Schedule =========== -->
-
-                <div class="item">
-                    <!-- DAY THREE -->
-                    <div class="schedule_date wow fadeInLeft">
-                        16
-                    </div>
-                    <div class="schedule_month wow fadeInRight">
-                        June
-                    </div>
-                    <!-- Accordion item -->
-                    <div class="mini_gap">
-                    </div>
-                    <div id="accordion3">
-                        <div class="wow fadeInDown panel">
-                            <a data-toggle="collapse" data-parent="#accordion3" href="#three_one">
-                                <div class="accordion_left">
-                                    <div class="accordions_titles">
-                                        <p class="accordion_date">
-                                            9:30 - 2:00 p.m.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="accordion_right">
-                                    <div class="accordions_titles">
-                                        <div class="accordion_description">
-                                            <p>
-                                                Technical Session
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="mini_gap">
-                        </div>
-
-                        <div class="wow fadeInDown panel">
-                            <a data-toggle="collapse" data-parent="#accordion3" href="#three_one">
-                                <div class="accordion_left">
-                                    <div class="accordions_titles">
-                                        <p class="accordion_date">
-                                            3:00 - 4:00 p.m.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="accordion_right">
-                                    <div class="accordions_titles">
-                                        <div class="accordion_description">
-                                            <p>
-                                                Valedictory Session
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Accordion item -->
-                        <div class="mini_gap">
-                        </div>
-                        <div class="mini_gap">
-                        </div>
-                        <a href="#reservation_menu" class="schedule_reservation wow btn eventime_button  fadeInRight">
-              Make Registration
-            </a>
-                        <!-- End of the accordion -->
-                    </div>
-                    <!-- End of the day -->
-                </div>
-
-                <!-- Carousel nav -->
-                <a class="left_arrow wow fadeInLeft" href="#sh_carousel" data-slide="prev">
-                    <svg width="26px" height="48">
-            <polygon points="3.3,24.5 25.5,2.3 24,0.8 0.3,24.5 24,48.2 25.5,46.7" />
-          </svg>
-                </a>
-                <a class="right_arrow wow fadeInRight" href="#sh_carousel" data-slide="next">
-                    <svg width="26px" height="48">
-            <polygon points="22.5,24.5 0.3,2.3 1.8,0.8 25.5,24.5 1.8,48.2 0.3,46.7" />
-          </svg>
-                </a>
-                <div class="gap">
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- End Schedule -->
 
     <!-- =================================================================================================== -->
@@ -879,50 +690,82 @@
                 <li>The meaning of innovation and creativity, in theory and practice</li>
               </ol> -->
                             <ul>
-                                <li>> <strong>Prof. Durgesh Tripathi </strong> || Inter-University Centre for Astronomy and Astrophysics (IUCAA), Pune, India</li>
-                                <li>> <strong>Prof. Maxim. Yu. Khlopov </strong>|| Virtual Institute of Astroparticle Physics, Paris, France</li>
+                                <li>> <strong>Prof. Durgesh Tripathi </strong> || Inter-University Centre for Astronomy
+                                    and Astrophysics (IUCAA), Pune, India</li>
+                                <li>> <strong>Prof. Maxim. Yu. Khlopov </strong>|| Virtual Institute of Astroparticle
+                                    Physics, Paris, France</li>
                                 <li>> <strong>Prof. Kazuharu Bamba </strong>|| Fukushima University, Japan</li>
                                 <li>> <strong>Prof. I. Radinschi </strong>|| GATU, Romania</li>
                                 <li>> <strong>Prof. A. DeBenedictis </strong>|| Simon Fraser University, Canada</li>
-                                <li>> <strong>Prof. S. Capozziello </strong>|| Universita' di Napoli ""Federico II"", Complesso Universitario di Monte S. Angelo Via Cinthia, Ed. N I-80126 Napoli Italy</li>
+                                <li>> <strong>Prof. S. Capozziello </strong>|| Universita' di Napoli ""Federico II"",
+                                    Complesso Universitario di Monte S. Angelo Via Cinthia, Ed. N I-80126 Napoli Italy
+                                </li>
                                 <li>> <strong>Prof. L. Herrera </strong>|| Universidad de Salamanca Spain</li>
-                                <li>> <strong>Prof. Sergey V. Ketov </strong>|| Tokyo Metropolitan University, Tokyo, Japan</li>
-                                <li>> <strong>Prof. A. Beesham </strong>|| Mangosuthu University of Technology, South Africa</li>
-                                <li>> <strong>Prof. S. Krishnannair </strong>|| University of Zululand, South Africa</li>
-                                <li>> <strong>Prof. G.P. Singh </strong> || Visvesvaraya National Institute of Technology, Nagpur</li>
-                                <li>> <strong>Dr. Pankaj Kushwaha </strong> || Indian Institutes of Science Education and Research, Mohali
+                                <li>> <strong>Prof. Sergey V. Ketov </strong>|| Tokyo Metropolitan University, Tokyo,
+                                    Japan</li>
+                                <li>> <strong>Prof. A. Beesham </strong>|| Mangosuthu University of Technology, South
+                                    Africa</li>
+                                <li>> <strong>Prof. S. Krishnannair </strong>|| University of Zululand, South Africa
+                                </li>
+                                <li>> <strong>Prof. G.P. Singh </strong> || Visvesvaraya National Institute of
+                                    Technology, Nagpur</li>
+                                <li>> <strong>Dr. Pankaj Kushwaha </strong> || Indian Institutes of Science Education
+                                    and Research, Mohali
                                 </li>
                                 <li>> <strong>Prof. Farook Rahaman </strong>|| Jadavpur University, Kolkata</li>
-                                <li>> <strong>Prof. Bivudutta Mishra </strong>|| Birla Institute of Technology & Science, Pilani, Hyderabad Campus</li>
-                                <li>> <strong>Prof. S.K. Tripathy </strong>|| Indira Gandhi Institute Of Technology, Sarang</li>
-                                <li>> <strong>Prof. A.K. Yadav </strong>|| United College of Engineering & Research, Greater Noida, India
+                                <li>> <strong>Prof. Bivudutta Mishra </strong>|| Birla Institute of Technology &
+                                    Science, Pilani, Hyderabad Campus</li>
+                                <li>> <strong>Prof. S.K. Tripathy </strong>|| Indira Gandhi Institute Of Technology,
+                                    Sarang</li>
+                                <li>> <strong>Prof. A.K. Yadav </strong>|| United College of Engineering & Research,
+                                    Greater Noida, India
                                 </li>
-                                <li>> <strong>Prof. G.S. Khadekar </strong>|| Department of Mathematics, R.T.M. Nagpur University, Nagpur
+                                <li>> <strong>Prof. G.S. Khadekar </strong>|| Department of Mathematics, R.T.M. Nagpur
+                                    University, Nagpur
                                 </li>
-                                <li>> <strong>Prof. C.P. Singh </strong>|| Department of Applied Mathematics, D.T.U, Bawana Road, Delhi-110042, India</li>
+                                <li>> <strong>Prof. C.P. Singh </strong>|| Department of Applied Mathematics, D.T.U,
+                                    Bawana Road, Delhi-110042, India</li>
                                 <li>> <strong>Prof. S.G. Ghosh </strong>|| CTP-Jamia Millia Islamia, New Delhi</li>
-                                <li>> <strong>Prof. G.K. Goswami </strong>|| Netaji Subhas University of Technology, New Delhi</li>
-                                <li>> <strong>Prof. D.D. Pawar </strong>|| Swami Ramanand Teerth Marathwada University , Nanded</li>
-                                <li>> <strong>Prof. P.K. Sahoo </strong> || Birla Institute of Technology & Science, Pilani, Hyderabad Campus
+                                <li>> <strong>Prof. G.K. Goswami </strong>|| Netaji Subhas University of Technology, New
+                                    Delhi</li>
+                                <li>> <strong>Prof. D.D. Pawar </strong>|| Swami Ramanand Teerth Marathwada University ,
+                                    Nanded</li>
+                                <li>> <strong>Prof. P.K. Sahoo </strong> || Birla Institute of Technology & Science,
+                                    Pilani, Hyderabad Campus
                                 </li>
-                                <li>> <strong>Prof. J.K. Singh </strong>|| Netaji Subhas University of Technology, New Delhi</li>
-                                <li>> <strong>Prof. Gauree Shanker </strong>|| Department of Mathematics and Statistics, Central University of Punjab, Bathinda-151001</li>
-                                <li>> <strong>Prof. Rakesh Kumar </strong>|| Department of Mathematics, Punjabi University, Patiala, India
+                                <li>> <strong>Prof. J.K. Singh </strong>|| Netaji Subhas University of Technology, New
+                                    Delhi</li>
+                                <li>> <strong>Prof. Gauree Shanker </strong>|| Department of Mathematics and Statistics,
+                                    Central University of Punjab, Bathinda-151001</li>
+                                <li>> <strong>Prof. Rakesh Kumar </strong>|| Department of Mathematics, Punjabi
+                                    University, Patiala, India
                                 </li>
-                                <li>> <strong>Prof. Sudhir Kumar Srivastava </strong>|| Department of Mathematics and Statistics, DDU Gorakhpir University, Gorakhpur</li>
-                                <li>> <strong>Prof. A.H. Hasmani </strong>|| Department of Mathematics, Sardar Patel University, Vallabh Vidyanagar, 3388120, India</li>
-                                <li>> <strong>Dr. Jibitesh Dutta </strong>|| Department of Basic Sciences and Social Sciences, NEHU, Shillong -793022, India</li>
-                                <li>><strong> Prof. R. Chaubey</strong> || Banaras Hindu University, Varanasi, India</li>
+                                <li>> <strong>Prof. Sudhir Kumar Srivastava </strong>|| Department of Mathematics and
+                                    Statistics, DDU Gorakhpir University, Gorakhpur</li>
+                                <li>> <strong>Prof. A.H. Hasmani </strong>|| Department of Mathematics, Sardar Patel
+                                    University, Vallabh Vidyanagar, 3388120, India</li>
+                                <li>> <strong>Dr. Jibitesh Dutta </strong>|| Department of Basic Sciences and Social
+                                    Sciences, NEHU, Shillong -793022, India</li>
+                                <li>><strong> Prof. R. Chaubey</strong> || Banaras Hindu University, Varanasi, India
+                                </li>
 
-                                <li>> <strong>Dr. Rajesh Kumar</strong> || Department of Mathematics and Statistics, DDU Gorakhpur University, Gorakhpur, India</li>
-                                <li>> <strong>Prof. Sergey Odintsov</strong> || Institut de Ciències de l'Espai (CSIC - ICE), Spain</li>
-                                <li>> <strong>Prof. Mohammad Sami</strong> || Centre for Cosmology and Science Popularization (CCSP), SGT University, Gurugram, Haryana, INDIA</li>
-                                <li>> <strong>Prof. Mukut Mani Tripathi </strong>|| Department of Mathematics, BHU, Varanasi, India</li>
-                                <li>> <strong>Prof. T. Venktesh </strong>|| Mathematical Sciences Institute, Belgavi, Goa, India</li>
-                                <li>> <strong>Prof. H.G. Nagaraj </strong>|| Department of Mathematics, Bangalore University, Karnataka, India </li>
+                                <li>> <strong>Dr. Rajesh Kumar</strong> || Department of Mathematics and Statistics, DDU
+                                    Gorakhpur University, Gorakhpur, India</li>
+                                <li>> <strong>Prof. Sergey Odintsov</strong> || Institut de Ciències de l'Espai (CSIC -
+                                    ICE), Spain</li>
+                                <li>> <strong>Prof. Mohammad Sami</strong> || Centre for Cosmology and Science
+                                    Popularization (CCSP), SGT University, Gurugram, Haryana, INDIA</li>
+                                <li>> <strong>Prof. Mukut Mani Tripathi </strong>|| Department of Mathematics, BHU,
+                                    Varanasi, India</li>
+                                <li>> <strong>Prof. T. Venktesh </strong>|| Mathematical Sciences Institute, Belgavi,
+                                    Goa, India</li>
+                                <li>> <strong>Prof. H.G. Nagaraj </strong>|| Department of Mathematics, Bangalore
+                                    University, Karnataka, India </li>
                                 <li>> <strong>Prof. Bankteshwar Tiwari </strong>|| DST-CIMS BHU, Varanasi, India </li>
-                                <li>> <strong>Prof. Absos Ali Shaikh </strong>|| Department of Mathematics, University of Burdwan Golapbag, Burdwan-713 104, India </li>
-                                <li>> <strong>Prof. G.K. Goswami</strong> || Netaji Subhas University of Technology, New Delhi, India</li>
+                                <li>> <strong>Prof. Absos Ali Shaikh </strong>|| Department of Mathematics, University
+                                    of Burdwan Golapbag, Burdwan-713 104, India </li>
+                                <li>> <strong>Prof. G.K. Goswami</strong> || Netaji Subhas University of Technology, New
+                                    Delhi, India</li>
                                 <br>
 
                             </ul>
@@ -960,12 +803,14 @@
                             <div class="ticket_price">
                                 <span>₹</span>3000
                             </div>
-                            <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="60px" height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50" xml:space="preserve">
-                  <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
+                            <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1"
+                                    id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px"
+                                    height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50"
+                                    xml:space="preserve">
+                                    <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
   57.875,27.368 57.879,27.372 60,25.25 59.996,25.247 60,25.243 " />
-                </svg></a>
+                                </svg></a>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -978,12 +823,14 @@
                             <div class="ticket_price">
                                 <span>₹</span>2500
                             </div>
-                            <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="60px" height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50" xml:space="preserve">
-                  <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
+                            <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1"
+                                    id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px"
+                                    height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50"
+                                    xml:space="preserve">
+                                    <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
   57.875,27.368 57.879,27.372 60,25.25 59.996,25.247 60,25.243 " />
-                </svg></a>
+                                </svg></a>
                         </div>
                     </div>
 
@@ -997,12 +844,14 @@
                             <div class="ticket_price">
                                 <span>$</span>200
                             </div>
-                            <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="60px" height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50" xml:space="preserve">
-                  <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
+                            <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1"
+                                    id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px"
+                                    height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50"
+                                    xml:space="preserve">
+                                    <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
   57.875,27.368 57.879,27.372 60,25.25 59.996,25.247 60,25.243 " />
-                </svg></a>
+                                </svg></a>
                         </div>
                     </div>
 
@@ -1016,12 +865,14 @@
                             <div class="ticket_price">
                                 <span>₹</span>2500
                             </div>
-                            <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1" id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="60px" height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50" xml:space="preserve">
-                  <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
+                            <a href="https://forms.gle/YWqqnt7usdo9bnFt6" class="ticket_button"><svg version="1.1"
+                                    id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px"
+                                    height="50px" viewBox="0 0 60 50" enable-background="new 0 0 60 50"
+                                    xml:space="preserve">
+                                    <polygon points="57.879,23.122 57.875,23.125 34.75,0 30.507,0 54.254,23.747 0,23.747 0,26.747 54.254,26.747 31,50 35.243,50
   57.875,27.368 57.879,27.372 60,25.25 59.996,25.247 60,25.243 " />
-                </svg></a>
+                                </svg></a>
                         </div>
                     </div>
                 </div>
@@ -1075,8 +926,8 @@
             <div class="first_title">
                 <p>
                     <strong>
-            P A Y M E N T
-          </strong>
+                        P A Y M E N T
+                    </strong>
                 </p>
             </div>
             <div class="reservation">
@@ -1102,7 +953,9 @@
     <div class="">
         <h1>
             &nbsp;&nbsp; Abstract Submission Link:
-            <a href="https://forms.gle/hYTToYCwmMgDR9Gs9" style="font-size: 70%; font-style: italic; color: rgb(53, 183, 252);" target="_blank">Submit Abstract Here</a>
+            <a href="https://forms.gle/hYTToYCwmMgDR9Gs9"
+                style="font-size: 70%; font-style: italic; color: rgb(53, 183, 252);" target="_blank">Submit Abstract
+                Here</a>
         </h1>
     </div>
 
@@ -1136,7 +989,8 @@
                         VENUE </h6>
                     <p class="wow fadeIn">
 
-                        <span class="texticon fa fa-home"></span>Address: TBI Block, AB-11, GLA University, Mathura, Uttar Pradesh, India<br>
+                        <span class="texticon fa fa-home"></span>Address: TBI Block, AB-11, GLA University, Mathura,
+                        Uttar Pradesh, India<br>
                         <!-- <span class="texticon fa fa-street-view"></span>GPS coordinates: 438.135696,317.114645 -->
                     </p>
                     <!-- <h6 class="wow fadeIn">
@@ -1172,7 +1026,8 @@
                     </a>
                     <a href="#" class="contact_icon fa fa-twitter wow fadeInUp">
                     </a>
-                    <a href="https://www.gla.ac.in/" target="_blank" class="contact_icon fa fa-graduation-cap wow fadeInUp">
+                    <a href="https://www.gla.ac.in/" target="_blank"
+                        class="contact_icon fa fa-graduation-cap wow fadeInUp">
                     </a>
                     <!-- <a href="#" class="contact_icon fa fa-google-plus wow fadeInUp">
             </a>
@@ -1206,9 +1061,10 @@
 
         <div class="footer_second_left">
             <p class="copyright">Designed and Developed By
-                <a href="https://www.linkedin.com/in/divyanshu-khandelwal-dkoder/" target="_blank" style="font-weight: bold; font-family: cursive;">
-          Divyanshu Khandelwal
-        </a>
+                <a href="https://www.linkedin.com/in/divyanshu-khandelwal-dkoder/" target="_blank"
+                    style="font-weight: bold; font-family: cursive;">
+                    Divyanshu Khandelwal
+                </a>
             </p>
 
         </div>
@@ -1217,17 +1073,18 @@
     <!-- Scripts -->
     <script type="text/javascript" src="js/jquery-2.2.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa2DO1ai4wjFpu3MMT6upNhpHfrsF9hOc"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa2DO1ai4wjFpu3MMT6upNhpHfrsF9hOc"></script>
     <!--Attetion! You need to replace follow Google MAP APi-->
     <script type="text/javascript" src="js/minify.js"></script>
     <script>
-        (function() {
+        (function () {
 
             var a = document.querySelectorAll("."),
                 speed = 0.2;
 
-            window.onscroll = function() {
-                [].slice.call().forEach(function(el, i) {
+            window.onscroll = function () {
+                [].slice.call().forEach(function (el, i) {
 
                     var windowYOffset = window.pageYOffset,
                         elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
